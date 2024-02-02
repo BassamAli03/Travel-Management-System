@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flight Info</title>
+
+<!------------------------------------web icon------------------------------->
+
+<link rel="icon" href="icon.png">
+
+</head>
+<body >
+    
+<!---------------------------------------------------Including CDN------------------------------------------->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+<link rel="stylesheet" type="text/css" href="style.css">
+<link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+<script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+<style>
+    body{
+        background-image: url(plane.jpg);
+        background-size: cover;
+        
+    }
+</style>
+
+
+
+
+<form action="#">
+
+<!-----------------------------------------------Main container------------------------------------------------------>
+
+    
+
+    <div class="row" style=" margin-left: auto; margin-right: auto; color:black; background-position: center;" >
+        <div class="col" >
+  <h1 style="font-size: 50px; margin-top: 20px;margin-left: 17px;  font-family:'Times New Roman'">Flights </h1>
+        
+  <h3 style="font-size: 35px;margin-left: 20px; font-family:'Times New Roman'">Selected Flight Details</h3>
+  <p style="font-size: 20px;margin-left: 20px; font-family:'Times New Roman'"><b>Here you will be able to select <br>the flight that seems most suitable to you.</b></p>
+  
+  </div>
+    </div>
+
+    <!-----------------------------------------------------Cards for details------------------------------------------------------>
+
+    <div class="container mt-2">
+         <div class="row">
+             <div class="col-sm-4 col-md-4 col-xl-4 col-xxl-4 mb-5">
+
+
+                <div class="card" id="dcard1" style="display: none;">
+                    
+                    <div class="card-body">
+                        <img src="4k plane logo.jpg" alt="Plane Logo" style="display: block; margin-left: 15px; margin-top: 40px;width: 16%; height: auto; " height="150px">
+                        <h1 style="margin-left: 20px; margin-top: -135px; font-size: 150%; text-align: center;">Emirates Flight (PK-1097)</h1>
+                        <a href="userdetails.html"><input type="button" onclick="openPage()" style="background-color: blue; color: white; text-align: center; border-color: blue; position:relative; left: 870px; margin-top: 90px ;" value="Select Flight"> </a>
+                        <h2 style="margin-left: -500px; margin-top: -90px; font-size: 160%; text-align: center;">12:05 PM</h1>
+                            <p style="margin-left: 230px; font-size: 110%;">USA</p>
+                        <h2 style="margin-left: -250px; margin-top: -83px; font-size: 160%; text-align: center;">------------></h1>
+
+                        <h2 style="margin-left: -200x; margin-top: -37px; font-size: 160%; text-align: center;">8:45 PM</h1>
+                            <p style="margin-left: 480px; font-size: 110%;">Italy</p>
+
+                        <h2 style="margin-left: 400px; margin-top: -80px; font-size: 160%; text-align: center;">Price per Passenger </h1>
+                            <p style="margin-left: 665px; font-size: 130%;">200,000 Rs</p>
+                      </div>
+                     
+                    </div>
+                
+
+                <div class="card" id="dcard2" style="display: none;">
+                     <div class="card-body">
+                        <img src="4k plane logo.jpg" alt="Plane Logo" style="display: block; margin-left: 15px; margin-top: 40px;width: 16%; height: auto; " height="150px">
+                     <h1 style="margin-left: 20px; margin-top: -135px; font-size: 150%; text-align: center;">PIA Flight (PK-1098)</h1>
+                     <a href="userdetails.html"><input type="button" onclick="openPage()"  style="background-color: blue; color: white; text-align: center; border-color: blue; position:relative; left: 870px; margin-top: 90px ;" value="Select Flight"> </a>
+                     <h2 style="margin-left: -500px; margin-top: -90px; font-size: 160%; text-align: center;">10:45 AM</h1>
+                        <p style="margin-left: 230px; font-size: 110%;">USA</p>
+                     <h2 style="margin-left: -250px; margin-top: -83px; font-size: 160%; text-align: center;">------------></h1>
+
+                     <h2 style="margin-left: -200x; margin-top: -37px; font-size: 160%; text-align: center;">5:45 PM</h1>
+                        <p style="margin-left: 480px; font-size: 110%;">Italy</p>
+
+                    <h2 style="margin-left: 400px; margin-top: -80px; font-size: 160%; text-align: center;">Price per Passenger </h1>
+                       <p style="margin-left: 665px; font-size: 130%;">190,000 Rs</p>
+                     </div>
+                     </div>
+
+                 <div class="card" id="dcard3" style="display: none;">
+                      <div class="card-body">
+                        <img src="4k plane logo.jpg" alt="Plane Logo" style="display: block; margin-left: 15px; margin-top: 40px;width: 16%; height: auto; " height="150px">
+                    <h1 style="margin-left: 20px; margin-top: -135px; font-size: 150%; text-align: center;">Emirates Flight (PK-1099)</h1>
+                    <a href="userdetails.html"><input type="button" onclick="openPage()" style="background-color: blue; color: white; text-align: center; border-color: blue; position:relative; left: 870px; margin-top: 90px ;" value="Select Flight"> </a>
+                     <h2 style="margin-left: -500px; margin-top: -90px; font-size: 160%; text-align: center;">1:45 PM</h1>
+                          <p style="margin-left: 230px; font-size: 110%;">USA</p>
+                      <h2 style="margin-left: -250px; margin-top: -83px; font-size: 160%; text-align: center;">------------></h1>
+
+                      <h2 style="margin-left: -200x; margin-top: -37px; font-size: 160%; text-align: center;">6:45 PM</h1>
+                          <p style="margin-left: 480px; font-size: 110%;">UAE</p>
+    
+                     <h2 style="margin-left: 400px; margin-top: -80px; font-size: 160%; text-align: center;">Price per Passenger </h1>
+                           <p style="margin-left: 665px; font-size: 130%;">230,000 Rs</p>
+                          </div>
+                         </div>
+
+                   <div class="card" id="dcard4" style="display: none;">
+                        <div class="card-body">
+                            <img src="4k plane logo.jpg" alt="Plane Logo" style="display: block; margin-left: 15px; margin-top: 40px;width: 16%; height: auto; " height="150px">
+                           <h1 style="margin-left: 20px; margin-top: -135px; font-size: 150%; text-align: center;">PIA Flight (PK-1100)</h1>
+                        <a href="userdetails.html"><input type="button" onclick="openPage()" style="background-color: blue; color: white; text-align: center; border-color: blue; position:relative; left: 870px; margin-top: 90px ;" value="Select Flight"> </a>
+                        <h2 style="margin-left: -500px; margin-top: -90px; font-size: 160%; text-align: center;">6:30 AM</h1>
+                            <p style="margin-left: 230px; font-size: 110%;">USA</p>
+                        <h2 style="margin-left: -250px; margin-top: -83px; font-size: 160%; text-align: center;">------------></h1>
+
+                           <h2 style="margin-left: -200x; margin-top: -37px; font-size: 160%; text-align: center;">10:45 AM</h1>
+                               <p style="margin-left: 480px; font-size: 110%;">UAE</p>
+        
+                           <h2 style="margin-left: 400px; margin-top: -80px; font-size: 160%; text-align: center;">Price per Passenger </h1>
+                               <p style="margin-left: 665px; font-size: 130%;">190,000 Rs</p>
+                             </div>
+                          </div>
+
+                    <div class="card" id="dcard5" style="display: none;">
+                       <div class="card-body">
+                    <img src="4k plane logo.jpg" alt="Plane Logo" style="display: block; margin-left: 15px; margin-top: 40px;width: 16%; height: auto; " height="150px">
+                    <h1 style="margin-left: 20px; margin-top: -135px; font-size: 150%; text-align: center;">Emirates Flight (PK-1101)</h1>
+                <a href="userdetails.html"><input type="button"onclick="openPage()"  style="background-color: blue; color: white; text-align: center; border-color: blue; position:relative; left: 870px; margin-top: 90px ;" value="Select Flight"> </a>
+                <h2 style="margin-left: -500px; margin-top: -90px; font-size: 160%; text-align: center;">5:30 AM</h1>
+                      <p style="margin-left: 230px; font-size: 110%;">USA</p>
+                 <h2 style="margin-left: -250px; margin-top: -83px; font-size: 160%; text-align: center;">------------></h1>
+            
+                 <h2 style="margin-left: -200x; margin-top: -37px; font-size: 160%; text-align: center;">11:45 AM</h1>
+                   <p style="margin-left: 480px; font-size: 110%;">Saudi Arabia</p>
+    
+                 <h2 style="margin-left: 400px; margin-top: -80px; font-size: 160%; text-align: center;">Price per Passenger </h1>
+                      <p style="margin-left: 665px; font-size: 130%;">150,000 Rs</p>
+                     </div>
+                 </div>
+                    
+                 <div class="card" id="dcard6" style="display: none;">
+                     <div class="card-body">
+                           <img src="4k plane logo.jpg" alt="Plane Logo" style="display: block; margin-left: 15px; margin-top: 40px;width: 16%; height: auto; " height="150px">
+                       <h1 style="margin-left: 20px; margin-top: -135px; font-size: 150%; text-align: center;">PIA Flight (PK-1102)</h1>
+                          <a href="userdetails.html"><input type="button" onclick="openPage()" style="background-color: blue; color: white; text-align: center; border-color: blue; position:relative; left: 870px; margin-top: 90px ;" value="Select Flight"> </a>
+                          <h2 style="margin-left: -500px; margin-top: -90px; font-size: 160%; text-align: center;">2:30 AM</h1>
+                           <p style="margin-left: 230px; font-size: 110%;">USA</p>
+                       <h2 style="margin-left: -250px; margin-top: -83px; font-size: 160%; text-align: center;">------------></h1>
+                
+                        <h2 style="margin-left: -200x; margin-top: -37px; font-size: 160%; text-align: center;">7:45 AM</h1>
+                        <p style="margin-left: 480px; font-size: 110%;">Saudi Arabia</p>
+
+                      <h2 style="margin-left: 400px; margin-top: -80px; font-size: 160%; text-align: center;">Price per Passenger </h1>
+                      <p style="margin-left: 665px; font-size: 130%;">120,000 Rs</p>
+                    </div>
+                     </div>
+                        <div class="card" id="dcard7" style="display: none;">
+                        <div class="card-body">
+                    <img src="4k plane logo.jpg" alt="Plane Logo" style="display: block; margin-left: 15px; margin-top: 40px;width: 16%; height: auto; " height="150px">
+                        <h1 style="margin-left: 20px; margin-top: -135px; font-size: 150%; text-align: center;">Emirates Flight (PK-1103)</h1>
+                        <a href="userdetails.html"><input type="button" onclick="openPage()" style="background-color: blue; color: white; text-align: center; border-color: blue; position:relative; left: 870px; margin-top: 90px ;" value="Select Flight"> </a>
+                          <h2 style="margin-left: -500px; margin-top: -90px; font-size: 160%; text-align: center;">6:30 AM</h1>
+                              <p style="margin-left: 230px; font-size: 110%;">Canada</p>
+                  <h2 style="margin-left: -250px; margin-top: -83px; font-size: 160%; text-align: center;">------------></h1>
+                   
+               <h2 style="margin-left: -200x; margin-top: -37px; font-size: 160%; text-align: center;">12:30 PM</h1>
+                        <p style="margin-left: 480px; font-size: 110%;">Italy</p>
+                   
+                     <h2 style="margin-left: 400px; margin-top: -80px; font-size: 160%; text-align: center;">Price per Passenger </h1>
+                            <p style="margin-left: 665px; font-size: 130%;">250,000 Rs</p>
+                       </div>
+                       </div>
+                           
+                   <div class="card" id="dcard8" style="display: none;">
+                         <div class="card-body">
+                           <img src="4k plane logo.jpg" alt="Plane Logo" style="display: block; margin-left: 15px; margin-top: 40px;width: 16%; height: auto; " height="150px">
+                           <h1 style="margin-left: 20px; margin-top: -135px; font-size: 150%; text-align: center;">PIA Flight (PK-1104)</h1>
+                       <a href="userdetails.html"><input type="button"onclick="openPage()"  style="background-color: blue; color: white; text-align: center; border-color: blue; position:relative; left: 870px; margin-top: 90px ;" value="Select Flight"> </a>
+                             <h2 style="margin-left: -500px; margin-top: -90px; font-size: 160%; text-align: center;">3:15 PM</h1>
+                          <p style="margin-left: 230px; font-size: 110%;">Canada</p>
+                           <h2 style="margin-left: -250px; margin-top: -83px; font-size: 160%; text-align: center;">------------></h1>
+                       
+                        <h2 style="margin-left: -200x; margin-top: -37px; font-size: 160%; text-align: center;">10:45 PM</h1>
+                         <p style="margin-left: 480px; font-size: 110%;">Italy</p>
+               
+                         <h2 style="margin-left: 400px; margin-top: -80px; font-size: 160%; text-align: center;">Price per Passenger </h1>
+                            <p style="margin-left: 665px; font-size: 130%;">200,000 Rs</p>
+                   </div>
+                     </div>
+                        <div class="card" id="dcard9" style="display: none;">
+                            <div class="card-body">
+                         <img src="4k plane logo.jpg" alt="Plane Logo" style="display: block; margin-left: 15px; margin-top: 40px;width: 16%; height: auto; " height="150px">
+                            <h1 style="margin-left: 20px; margin-top: -135px; font-size: 150%; text-align: center;">Emirates Flight (PK-1105)</h1>
+                     <a href="userdetails.html"><input type="button" onclick="openPage()" style="background-color: blue; color: white; text-align: center; border-color: blue; position:relative; left: 870px; margin-top: 90px ;" value="Select Flight"> </a>
+                              <h2 style="margin-left: -500px; margin-top: -90px; font-size: 160%; text-align: center;">12:30 AM</h1>
+                                 <p style="margin-left: 230px; font-size: 110%;">Canada</p>
+                             <h2 style="margin-left: -250px; margin-top: -83px; font-size: 160%; text-align: center;">------------></h1>
+                           
+                              <h2 style="margin-left: -200x; margin-top: -37px; font-size: 160%; text-align: center;">9:45 AM</h1>
+                                   <p style="margin-left: 480px; font-size: 110%;">UAE</p>
+                           
+                             <h2 style="margin-left: 400px; margin-top: -80px; font-size: 160%; text-align: center;">Price per Passenger </h1>
+                                   <p style="margin-left: 665px; font-size: 130%;">300,000 Rs</p>
+                              </div>
+                                 </div>
+                                   
+                 <div class="card" id="dcard10" style="display: none;">
+                     <div class="card-body">
+                       <img src="4k plane logo.jpg" alt="Plane Logo" style="display: block; margin-left: 15px; margin-top: 40px;width: 16%; height: auto; " height="150px">
+                    <h1 style="margin-left: 20px; margin-top: -135px; font-size: 150%; text-align: center;">PIA Flight (PK-1106)</h1>
+                   <a href="userdetails.html"><input type="button" onclick="openPage()" style="background-color: blue; color: white; text-align: center; border-color: blue; position:relative; left: 870px; margin-top: 90px ;" value="Select Flight"> </a>
+               <h2 style="margin-left: -500px; margin-top: -90px; font-size: 160%; text-align: center;">4:45 PM</h1>
+               <p style="margin-left: 230px; font-size: 110%;">Canada</p>
+           <h2 style="margin-left: -250px; margin-top: -83px; font-size: 160%; text-align: center;">------------></h1>
+          
+              <h2 style="margin-left: -200x; margin-top: -37px; font-size: 160%; text-align: center;">12:45 AM</h1>
+            <p style="margin-left: 480px; font-size: 110%;">UAE</p>
+                       
+               <h2 style="margin-left: 400px; margin-top: -80px; font-size: 160%; text-align: center;">Price per Passenger </h1>
+               <p style="margin-left: 665px; font-size: 130%;">250,000 Rs</p>
+                   </div>
+               </div>
+                      <div class="card" id="dcard11" style="display: none;">
+                         <div class="card-body">
+                  <img src="4k plane logo.jpg" alt="Plane Logo" style="display: block; margin-left: 15px; margin-top: 40px;width: 16%; height: auto; " height="150px">
+                     <h1 style="margin-left: 20px; margin-top: -135px; font-size: 150%; text-align: center;">Emirates Flight (PK-1107)</h1>
+                        <a href="userdetails.html"><input type="button" onclick="openPage()" style="background-color: blue; color: white; text-align: center; border-color: blue; position:relative; left: 870px; margin-top: 90px ;" value="Select Flight"> </a>
+                <h2 style="margin-left: -500px; margin-top: -90px; font-size: 160%; text-align: center;">1:30 AM</h1>
+                               <p style="margin-left: 230px; font-size: 110%;">Canada</p>
+                <h2 style="margin-left: -250px; margin-top: -83px; font-size: 160%; text-align: center;">------------></h1>
+                                   
+                          <h2 style="margin-left: -200x; margin-top: -37px; font-size: 160%; text-align: center;">7:00 AM</h1>
+                      <p style="margin-left: 480px; font-size: 110%;">Saudi Arabia</p>
+              
+                      <h2 style="margin-left: 400px; margin-top: -80px; font-size: 160%; text-align: center;">Price per Passenger </h1>
+                             <p style="margin-left: 665px; font-size: 130%;">400,000 Rs</p>
+                              </div>
+                            </div>
+                                           
+                           <div class="card" id="dcard12" style="display: none;">
+                     <div class="card-body">
+                        <img src="4k plane logo.jpg" alt="Plane Logo" style="display: block; margin-left: 15px; margin-top: 40px;width: 16%; height: auto; " height="150px">
+                          <h1 style="margin-left: 20px; margin-top: -135px; font-size: 150%; text-align: center;">PIA Flight (PK-1108)</h1>
+                     <a href="userdetails.html"><input type="button" onclick="openPage()" style="background-color: blue; color: white; text-align: center; border-color: blue; position:relative; left: 870px; margin-top: 90px ;" value="Select Flight"> </a>
+                       <h2 style="margin-left: -500px; margin-top: -90px; font-size: 160%; text-align: center;">3:45 AM</h1>
+                      <p style="margin-left: 230px; font-size: 110%;">Canada</p>
+                   <h2 style="margin-left: -250px; margin-top: -83px; font-size: 160%; text-align: center;">------------></h1>
+            
+                     <h2 style="margin-left: -200x; margin-top: -37px; font-size: 160%; text-align: center;">11:15 AM</h1>
+                           <p style="margin-left: 480px; font-size: 110%;">Saudi Arabia</p>
+                               
+                <h2 style="margin-left: 400px; margin-top: -80px; font-size: 160%; text-align: center;">Price per Passenger </h1>
+                           <p style="margin-left: 665px; font-size: 130%;">300,000 Rs</p>
+                          </div>
+                     </div> 
+                              <div class="card" id="dcard13" style="display: none;">
+                                  <div class="card-body">
+                              <img src="4k plane logo.jpg" alt="Plane Logo" style="display: block; margin-left: 15px; margin-top: 40px;width: 16%; height: auto; " height="150px">
+                       <h1 style="margin-left: 20px; margin-top: -135px; font-size: 150%; text-align: center;">Emirates Flight (PK-1109)</h1>
+                             <a href="userdetails.html"><input type="button" onclick="openPage()" style="background-color: blue; color: white; text-align: center; border-color: blue; position:relative; left: 870px; margin-top: 90px ;" value="Select Flight"> </a>
+                        <h2 style="margin-left: -500px; margin-top: -90px; font-size: 160%; text-align: center;">7:30 AM</h1>
+                             <p style="margin-left: 230px; font-size: 110%;">Mexico</p>
+                             <h2 style="margin-left: -250px; margin-top: -83px; font-size: 160%; text-align: center;">------------></h1>
+          
+                    <h2 style="margin-left: -200x; margin-top: -37px; font-size: 160%; text-align: center;">3:45 PM</h1>
+                        <p style="margin-left: 480px; font-size: 110%;">Italy</p>
+           
+                <h2 style="margin-left: 400px; margin-top: -80px; font-size: 160%; text-align: center;">Price per Passenger </h1>
+                           <p style="margin-left: 665px; font-size: 130%;">220,000 Rs</p>
+                                   </div>
+                              </div>
+                                                   
+                         <div class="card" id="dcard14" style="display: none;">
+                      <div class="card-body">
+                <img src="4k plane logo.jpg" alt="Plane Logo" style="display: block; margin-left: 15px; margin-top: 40px;width: 16%; height: auto; " height="150px">
+                               <h1 style="margin-left: 20px; margin-top: -135px; font-size: 150%; text-align: center;">PIA Flight (PK-1110)</h1>
+                               <a href="userdetails.html"><input type="button" onclick="openPage()" style="background-color: blue; color: white; text-align: center; border-color: blue; position:relative; left: 870px; margin-top: 90px ;" value="Select Flight"> </a>
+                                  <h2 style="margin-left: -500px; margin-top: -90px; font-size: 160%; text-align: center;">1:30 AM</h1>
+                                    <p style="margin-left: 230px; font-size: 110%;">Mexico</p>
+                                 <h2 style="margin-left: -250px; margin-top: -83px; font-size: 160%; text-align: center;">------------></h1>
+                     
+                               <h2 style="margin-left: -200x; margin-top: -37px; font-size: 160%; text-align: center;">1:45 PM</h1>
+                                      <p style="margin-left: 480px; font-size: 110%;">Italy</p>
+              
+                                <h2 style="margin-left: 400px; margin-top: -80px; font-size: 160%; text-align: center;">Price per Passenger </h1>
+                                          <p style="margin-left: 665px; font-size: 130%;">195,000 Rs</p>
+                                     </div>
+                                            </div>
+
+                            <div class="card" id="dcard15" style="display: none;">
+                               <div class="card-body">
+                              <img src="4k plane logo.jpg" alt="Plane Logo" style="display: block; margin-left: 15px; margin-top: 40px;width: 16%; height: auto; " height="150px">
+                            <h1 style="margin-left: 20px; margin-top: -135px; font-size: 150%; text-align: center;">Emirates Flight (PK-1111)</h1>
+                                  <a href="userdetails.html"><input type="button" onclick="openPage()" style="background-color: blue; color: white; text-align: center; border-color: blue; position:relative; left: 870px; margin-top: 90px ;" value="Select Flight"> </a>
+                             <h2 style="margin-left: -500px; margin-top: -90px; font-size: 160%; text-align: center;">8:00 AM</h1>
+                              <p style="margin-left: 230px; font-size: 110%;">Mexico</p>
+                        <h2 style="margin-left: -250px; margin-top: -83px; font-size: 160%; text-align: center;">------------></h1>
+                                                   
+                  <h2 style="margin-left: -200x; margin-top: -37px; font-size: 160%; text-align: center;">2:30 PM</h1>
+                          <p style="margin-left: 480px; font-size: 110%;">UAE</p>
+             
+                      <h2 style="margin-left: 400px; margin-top: -80px; font-size: 160%; text-align: center;">Price per Passenger </h1>
+                                <p style="margin-left: 665px; font-size: 130%;">450,000 Rs</p>
+                                </div>
+                                </div>  
+
+                            <div class="card" id="dcard16" style="display: none;">
+                                   <div class="card-body">
+                                   <img src="4k plane logo.jpg" alt="Plane Logo" style="display: block; margin-left: 15px; margin-top: 40px;width: 16%; height: auto; " height="150px">
+                                        <h1 style="margin-left: 20px; margin-top: -135px; font-size: 150%; text-align: center;">PIA Flight (PK-1112)</h1>
+                                     <a href="userdetails.html"><input type="button" onclick="openPage()" style="background-color: blue; color: white; text-align: center; border-color: blue; position:relative; left: 870px; margin-top: 90px ;" value="Select Flight"> </a>
+                                      <h2 style="margin-left: -500px; margin-top: -90px; font-size: 160%; text-align: center;">5:30 PM</h1>
+                                    <p style="margin-left: 230px; font-size: 110%;">Mexico</p>
+                                   <h2 style="margin-left: -250px; margin-top: -83px; font-size: 160%; text-align: center;">------------></h1>
+                                                       
+                                 <h2 style="margin-left: -200x; margin-top: -37px; font-size: 160%; text-align: center;">1:45 AM</h1>
+                                   <p style="margin-left: 480px; font-size: 110%;">UAE</p>
+                                               
+                          <h2 style="margin-left: 400px; margin-top: -80px; font-size: 160%; text-align: center;">Price per Passenger </h1>
+                            <p style="margin-left: 665px; font-size: 130%;">390,000 Rs</p>
+                                 </div>
+                               </div>
+
+                               <div class="card" id="dcard17" style="display: none;">
+                                <div class="card-body">
+                               <img src="4k plane logo.jpg" alt="Plane Logo" style="display: block; margin-left: 15px; margin-top: 40px;width: 16%; height: auto; " height="150px">
+                             <h1 style="margin-left: 20px; margin-top: -135px; font-size: 150%; text-align: center;">Emirates Flight (PK-1113)</h1>
+                                   <a href="userdetails.html"><input type="button" onclick="openPage()" style="background-color: blue; color: white; text-align: center; border-color: blue; position:relative; left: 870px; margin-top: 90px ;" value="Select Flight"> </a>
+                              <h2 style="margin-left: -500px; margin-top: -90px; font-size: 160%; text-align: center;">9:00 AM</h1>
+                               <p style="margin-left: 230px; font-size: 110%;">Mexico</p>
+                         <h2 style="margin-left: -250px; margin-top: -83px; font-size: 160%; text-align: center;">------------></h1>
+                                                    
+                   <h2 style="margin-left: -200x; margin-top: -37px; font-size: 160%; text-align: center;">4:30 PM</h1>
+                           <p style="margin-left: 480px; font-size: 110%;">Saudi Arabia</p>
+              
+                       <h2 style="margin-left: 400px; margin-top: -80px; font-size: 160%; text-align: center;">Price per Passenger </h1>
+                                 <p style="margin-left: 665px; font-size: 130%;">250,000 Rs</p>
+                                 </div>
+                                 </div>  
+ 
+                             <div class="card" id="dcard18" style="display: none;">
+                                    <div class="card-body">
+                                    <img src="4k plane logo.jpg" alt="Plane Logo" style="display: block; margin-left: 15px; margin-top: 40px;width: 16%; height: auto; " height="150px">
+                                         <h1 style="margin-left: 20px; margin-top: -135px; font-size: 150%; text-align: center;">PIA Flight (PK-1114)</h1>
+                                      <a href="userdetails.html"><input type="button" onclick="openPage()"  style="background-color: blue; color: white; text-align: center; border-color: blue; position:relative; left: 870px; margin-top: 90px ;" value="Select Flight"> </a>
+                                       <h2 style="margin-left: -500px; margin-top: -90px; font-size: 160%; text-align: center;">2:30 PM</h1>
+                                     <p style="margin-left: 230px; font-size: 110%;">Mexico</p>
+                                    <h2 style="margin-left: -250px; margin-top: -83px; font-size: 160%; text-align: center;">------------></h1>
+                                                        
+                                  <h2 style="margin-left: -200x; margin-top: -37px; font-size: 160%; text-align: center;">8:45 PM</h1>
+                                    <p style="margin-left: 480px; font-size: 110%;">Saudi Arabia</p>
+                                                
+                           <h2 style="margin-left: 400px; margin-top: -80px; font-size: 160%; text-align: center;">Price per Passenger </h1>
+                             <p style="margin-left: 665px; font-size: 130%;">210,000 Rs</p>
+                                  </div>
+                                </div>
+
+                        <script>
+                
+                            var queryString = window.location.search;
+                            var urlParams = new URLSearchParams(queryString);
+                            var country = urlParams.get('country');
+                            var country1 = urlParams.get('country1');
+                        
+
+                            if (country === "USA" && country1 === "Italy") {
+                            document.getElementById("dcard1").style.display = "block"; document.getElementById("dcard2").style.display = "block";
+                            } else if (country === "USA" && country1 === "UAE") {
+                                document.getElementById("dcard3").style.display = "block"; document.getElementById("dcard4").style.display = "block";
+                            } else if (country === "USA" && country1 === "Saudi Arabia") {
+                                document.getElementById("dcard5").style.display = "block"; document.getElementById("dcard6").style.display = "block";
+                            } else if (country === "Canada" && country1 === "Italy") {
+                                document.getElementById("dcard7").style.display = "block"; document.getElementById("dcard8").style.display = "block";
+                            } else if (country === "Canada" && country1 === "UAE") {
+                                document.getElementById("dcard9").style.display = "block"; document.getElementById("dcard10").style.display = "block";
+                            } else if (country === "Canada" && country1 === "Saudi Arabia") {
+                                document.getElementById("dcard11").style.display = "block"; document.getElementById("dcard12").style.display = "block";
+                            } else if (country === "Mexico" && country1 === "Italy") {
+                                document.getElementById("dcard13").style.display = "block"; document.getElementById("dcard14").style.display = "block";
+                            } else if (country === "Mexico" && country1 === "UAE") {
+                                document.getElementById("dcard15").style.display = "block"; document.getElementById("dcard16").style.display = "block";
+                            } else if (country === "Mexico" && country1 === "Saudi Arabia") {
+                                document.getElementById("dcard17").style.display = "block"; document.getElementById("dcard18").style.display = "block";
+                            } else {
+                            alert("Invalid card number entered!");
+                            }
+                            
+                        
+                        </script>
+                        
+
+                        <script>
+                        function openPage() {
+
+                            var price;
+                            var flightnum;
+
+                            document.getElementById('dcard1').addEventListener('click', function() {
+                            price = 200000;
+                            flightnum = "PK-1097";
+                            localStorage.setItem('price', price);
+                            localStorage.setItem('flightnum', flightnum);
+                            });
+                            document.getElementById('dcard2').addEventListener('click', function() {
+                            price = 190000;
+                            flightnum = "PK-1098";
+                            localStorage.setItem('price', price);
+                            localStorage.setItem('flightnum', flightnum);
+                            });
+                            document.getElementById('dcard3').addEventListener('click', function() {
+                            price = 230000;
+                            flightnum = "PK-1099";
+                            localStorage.setItem('price', price);
+                            localStorage.setItem('flightnum', flightnum);
+                            });
+                            document.getElementById('dcard4').addEventListener('click', function() {
+                            price = 190000;
+                            flightnum = "PK-1100";
+                            localStorage.setItem('price', price);
+                            localStorage.setItem('flightnum', flightnum);
+                            });
+                            document.getElementById('dcard5').addEventListener('click', function() {
+                            price = 150000;
+                            flightnum = "PK-1101";
+                            localStorage.setItem('price', price);
+                            localStorage.setItem('flightnum', flightnum);
+                            });
+                            document.getElementById('dcard6').addEventListener('click', function() {
+                            price = 120000;
+                            flightnum = "PK-1102";
+                            localStorage.setItem('price', price);
+                            localStorage.setItem('flightnum', flightnum);
+                            });
+                            document.getElementById('dcard7').addEventListener('click', function() {
+                            price = 250000;
+                            flightnum = "PK-1103";
+                            localStorage.setItem('price', price);
+                            localStorage.setItem('flightnum', flightnum);
+                            });
+                            document.getElementById('dcard8').addEventListener('click', function() {
+                            price = 200000;
+                            flightnum = "PK-1104";
+                            localStorage.setItem('price', price);
+                            localStorage.setItem('flightnum', flightnum);
+                            });
+                            document.getElementById('dcard9').addEventListener('click', function() {
+                            price = 300000;
+                            flightnum = "PK-1105";
+                            localStorage.setItem('price', price);
+                            localStorage.setItem('flightnum', flightnum);
+                            });
+                            document.getElementById('dcard10').addEventListener('click', function() {
+                            price = 250000;
+                            flightnum = "PK-1106";
+                            localStorage.setItem('price', price);
+                            localStorage.setItem('flightnum', flightnum);
+                            });
+                            document.getElementById('dcard11').addEventListener('click', function() {
+                            price = 400000;
+                            flightnum = "PK-1107";
+                            localStorage.setItem('price', price);
+                            localStorage.setItem('flightnum', flightnum);
+                            });
+                            document.getElementById('dcard12').addEventListener('click', function() {
+                            price = 300000;
+                            flightnum = "PK-1108";
+                            localStorage.setItem('price', price);
+                            localStorage.setItem('flightnum', flightnum);
+                            });
+                            document.getElementById('dcard13').addEventListener('click', function() {
+                            price = 220000;
+                            flightnum = "PK-1109";
+                            localStorage.setItem('price', price);
+                            localStorage.setItem('flightnum', flightnum);
+                            });
+                            document.getElementById('dcard14').addEventListener('click', function() {
+                            price = 195000;
+                            flightnum = "PK-1110";
+                            localStorage.setItem('price', price);
+                            localStorage.setItem('flightnum', flightnum);
+                            });
+                            document.getElementById('dcard15').addEventListener('click', function() {
+                            price = 450000;
+                            flightnum = "PK-1111";
+                            localStorage.setItem('price', price);
+                            localStorage.setItem('flightnum', flightnum);
+                            });
+                            document.getElementById('dcard16').addEventListener('click', function() {
+                            price = 390000;
+                            flightnum = "PK-1112";
+                            localStorage.setItem('price', price);
+                            localStorage.setItem('flightnum', flightnum);
+                            });
+                            document.getElementById('dcard17').addEventListener('click', function() {
+                            price = 250000;
+                            flightnum = "PK-1113";
+                            localStorage.setItem('price', price);
+                            localStorage.setItem('flightnum', flightnum);
+                            });
+                            document.getElementById('dcard18').addEventListener('click', function() {
+                            price = 210000;
+                            flightnum = "PK-1114";
+                            localStorage.setItem('price', price);
+                            localStorage.setItem('flightnum', flightnum);
+                            });
+
+                    }
+                        
+                        </script>
+
+                 </div>
+
+                </div>
+            
+    </div>
+
+    <a href="flight.html"><input type="button" style="background-color: blue; color: white; text-align: center; border-color: blue; margin-left: 30px; margin-top: 130px;" value="BACK"> </a>
+      
+      
+      
+      
+      
+      
+</div>
+
+
+
+</form>
+</body>
+</html>

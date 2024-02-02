@@ -1,0 +1,476 @@
+.card {
+    margin: -7px;
+    
+}
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* align cards to the center */
+    align-items: center;
+  }
+
+  #card4 {
+    top: -15px;
+    left: 200px;
+  }
+  #card5 {
+    top: -15px;
+    left: 200px;
+  }
+  .card-body {
+    padding: 2px; /* adjust this value to decrease the padding */
+    margin: 0; /* set margin to 0 to remove any default margins */
+  }
+  .card-footer {
+    padding: 5px;
+    margin: 0;
+    margin-top: 15px;
+    margin-left: 0px;
+  }
+  #fcard1 {
+    top: 20px;
+    left: 50px;
+    width: 1000px;
+    height: 160px;
+  }
+  #fcard2 {
+    top: 40px;
+    left: 50px;
+    width: 1000px;
+    height: 160px;
+  }
+  #fcard3{
+    top: 20px;
+    left: 270px;
+    width: 500px;
+    height: 255px;
+  }
+  #cancelcard1{
+    top: 20px;
+    left: 250px;
+    width: 600px;
+    height: 350px;
+  }
+  #cancelcard2{
+    top: 20px;
+    left: 250px;
+    width: 600px;
+    height: 310px;
+  }
+  #cancelcard3{
+    top: 20px;
+    left: 250px;
+    width: 600px;
+    height: 360px;
+  }
+  #ucard1{
+    top: 10px;
+    left: 160px;
+    width: 800px;
+    height: 430px;
+  }
+  #ucard2{
+    top: 0px;
+    left: 270px;
+    width: 500px;
+    height: 475px;
+  }
+  #ucard3{
+    top: -30px;
+    left: 270px;
+    width: 500px;
+    height: 550px;
+  }
+  #packcard1{
+    top: 10px;
+    left: 270px;
+    width: 500px;
+    height: 400px;
+  }
+  #infocard1{
+    top: -40px;
+    left: 70px;
+    width: 1000px;
+    height: 570px;
+  }
+  #cname{
+    margin-left: 400px;
+    margin-top: -344px;
+  }
+  #cnum{
+    margin-left: 400px;
+  
+  }
+  #cvc{
+    margin-left: 400px;
+  }
+  #emonth{
+    margin-left: 400px;
+  }
+  #eyear{
+    margin-left: 600px;
+    margin-top: -87px;
+  }
+
+
+  #dcard1{
+    top: 20px;
+    left: 50px;
+    width: 1000px;
+    height: 180px;
+  }
+  #dcard2{
+    top: 40px;
+    left: 50px;
+    width: 1000px;
+    height: 180px;
+  }
+  #dcard3{
+    top: 20px;
+    left: 50px;
+    width: 1000px;
+    height: 180px;
+  }
+  #dcard4{
+    top: 40px;
+    left: 50px;
+    width: 1000px;
+    height: 180px;
+  }
+  #dcard5{
+    top: 20px;
+    left: 50px;
+    width: 1000px;
+    height: 180px;
+  }
+  #dcard6{
+    top: 40px;
+    left: 50px;
+    width: 1000px;
+    height: 180px;
+  }
+  #dcard7{
+    top: 20px;
+    left: 50px;
+    width: 1000px;
+    height: 180px;
+  }
+  #dcard8{
+    top: 40px;
+    left: 50px;
+    width: 1000px;
+    height: 180px;
+  }
+  #dcard9{
+    top: 20px;
+    left: 50px;
+    width: 1000px;
+    height: 180px;
+  }
+  #dcard10{
+    top: 40px;
+    left: 50px;
+    width: 1000px;
+    height: 180px;
+  }
+  #dcard11{
+    top: 20px;
+    left: 50px;
+    width: 1000px;
+    height: 180px;
+  }
+  #dcard12{
+    top: 40px;
+    left: 50px;
+    width: 1000px;
+    height: 180px;
+  }
+  #dcard13{
+    top: 20px;
+    left: 50px;
+    width: 1000px;
+    height: 180px;
+  }
+  #dcard14{
+    top: 40px;
+    left: 50px;
+    width: 1000px;
+    height: 180px;
+  }
+  #dcard15{
+    top: 20px;
+    left: 50px;
+    width: 1000px;
+    height: 180px;
+  }
+  #dcard16{
+    top: 40px;
+    left: 50px;
+    width: 1000px;
+    height: 180px;
+  }
+  #dcard17{
+    top: 20px;
+    left: 50px;
+    width: 1000px;
+    height: 180px;
+  }
+  #dcard18{
+    top: 40px;
+    left: 50px;
+    width: 1000px;
+    height: 180px;
+  }
+  #ccard1{
+    top: 20px;
+    left: 150px;
+    width: 800px;
+    height: 180px;
+  }
+  #ccard2{
+    top: 40px;
+    left: 150px;
+    width: 800px;
+    height: 180px;
+  }
+  #ccard3{
+    top: 20px;
+    left: 150px;
+    width: 800px;
+    height: 180px;
+  }
+  #ccard4{
+    top: 40px;
+    left: 150px;
+    width: 800px;
+    height: 180px;
+  }
+  #ccard5{
+    top: 20px;
+    left: 150px;
+    width: 800px;
+    height: 180px;
+  }
+  #ccard6{
+    top: 40px;
+    left: 150px;
+    width: 800px;
+    height: 180px;
+  }
+  #ccard7{
+    top: 20px;
+    left: 150px;
+    width: 800px;
+    height: 180px;
+  }
+  #ccard8{
+    top: 40px;
+    left: 150px;
+    width: 800px;
+    height: 180px;
+  }
+  #ccard9{
+    top: 20px;
+    left: 150px;
+    width: 800px;
+    height: 180px;
+  }
+  #ccard10{
+    top: 40px;
+    left: 150px;
+    width: 800px;
+    height: 180px;
+  }
+  #ccard11{
+    top: 20px;
+    left: 150px;
+    width: 800px;
+    height: 180px;
+  }
+  #ccard12{
+    top: 40px;
+    left: 150px;
+    width: 800px;
+    height: 190px;
+  }
+  #ccard13{
+    top: 20px;
+    left: 150px;
+    width: 800px;
+    height: 190px;
+  }
+  #ccard14{
+    top: 40px;
+    left: 150px;
+    width: 800px;
+    height: 180px;
+  }
+  #ccard15{
+    top: 20px;
+    left: 150px;
+    width: 800px;
+    height: 180px;
+  }
+  #ccard16{
+    top: 40px;
+    left: 150px;
+    width: 800px;
+    height: 180px;
+  }
+  #ccard17{
+    top: 20px;
+    left: 150px;
+    width: 800px;
+    height: 180px;
+  }
+  #ccard18{
+    top: 40px;
+    left: 150px;
+    width: 800px;
+    height: 180px;
+  }
+  #hhcard1{
+    top: 80px;
+    left: 70px;
+    width: 1000px;
+    height: 160px;
+  }
+  #hhcard3{
+    top: 20px;
+    left: 270px;
+    width: 500px;
+    height: 255px;
+  }
+
+  #hcard1,#hcard5,#hcard8,#hcard12,#hcard15,#hcard19{
+    top: 20px;
+    left: 50px;
+    width: 1000px;
+    height: 180px;
+  }
+  #hcard2,#hcard6,#hcard9,#hcard13,#hcard16,#hcard20{
+    top: 40px;
+    left: 50px;
+    width: 1000px;
+    height: 210px;
+  }
+  #hcard3,#hcard7,#hcard10,#hcard14,#hcard17,#hcard21{
+    top: 60px;
+    left: 50px;
+    width: 1000px;
+    height: 180px;
+  }
+  #hcard4,#hcard11,#hcard18,#hcard22{
+    top: 80px;
+    left: 50px;
+    width: 1000px;
+    height: 180px;
+  }
+  #pcard1{
+    top: 20px;
+    left: 50px;
+    width: 1000px;
+    height: 200px;
+  }
+  #pcard2{
+    top: 40px;
+    left: 50px;
+    width: 1000px;
+    height: 200px;
+  }
+  #pcard3{
+    top: 60px;
+    left: 50px;
+    width: 1000px;
+    height: 200px;
+  }
+  #pcard4{
+    top: 80px;
+    left: 50px;
+    width: 1000px;
+    height: 200px;
+  }
+  #pcard5{
+    top: 100px;
+    left: 50px;
+    width: 1000px;
+    height: 200px;
+  }
+
+  #one  {
+        margin-right: 20px;
+
+  }
+  #two{
+        margin-right: 20px;
+
+  }
+  #multi{
+    margin-right: 20px;
+
+  }
+  #buttons{
+margin-top: 10px;
+
+  }
+  #from{
+    margin-top: 7px;
+  }
+  #from-field{
+    margin-top: -10px;
+  }
+  #to-label{
+    margin-left: 150px;
+  }
+  #depart-label{
+    margin-left: 170px;
+  }
+  #return-label{
+    margin-left: 130px;
+  }
+  #passengers-label{
+    margin-left: 130px;
+  }
+  #card6{
+    top: 50px;
+    left: 200px;
+  }
+  #card7 {
+    top: 50px;
+    left: 200px;
+  }
+  #button1{
+    margin-top: 250px;
+  }
+  #button2{
+    margin-top: 150px;
+  }
+  #pickuptimelabel{
+    margin-left: 100px;
+  }
+  #dropoffdatelabel{
+    margin-left: 25px;
+  }
+  #dropofftimelabel{
+    margin-left: 90px;
+  }
+  #pickuplabel{
+    margin-left: 10px; 
+  }
+  #pickupdatelabel{
+    margin-left: 70px; 
+  }
+
+  #destination-field{
+    margin-top: -10px;
+  }
+  #checkin-label{
+    margin-left: 70px;
+  }
+  #checkout-label{
+    margin-left: 130px;
+  }
+  #rooms-label{
+    margin-left: 110px;
+  }

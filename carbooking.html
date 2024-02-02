@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Info</title>
+
+<!------------------------------------web icon------------------------------->
+
+<link rel="icon" href="icon.png">
+
+</head>
+<body >
+    
+<!---------------------------------------------------Including CDN------------------------------------------->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+<link rel="stylesheet" type="text/css" href="style.css">
+<link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+<script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script>
+    $(function() {
+      $("#pickupdate").datepicker();
+    });
+  </script>
+  <script>
+    $(function() {
+      $("#dropoffdate").datepicker();
+    });
+  </script>
+<style>
+    body{
+        background-image: url(pexels-iván-rivero-1046227.jpg);
+        background-size: cover;
+        
+    }
+</style>
+
+
+
+
+
+<form action="#">
+
+<!-----------------------------------------------Main container------------------------------------------------------>
+
+   
+
+    <div class="row" style=" margin-left: auto; margin-right: auto; color:black; background-position: center;" >
+      <div class="col" >
+<h1 style="font-size: 50px; margin-top: 20px;margin-left: 17px;  font-family:'Times New Roman'">Cars </h1>
+      
+<h3 style="font-size: 35px;margin-left: 20px; font-family:'Times New Roman'">Car Details</h3>
+<p style="font-size: 20px;margin-left: 20px; font-family:'Times New Roman'">Here you will be able to find <br>every available cars with resepect to their destination.</p>
+
+</div>
+  </div>
+
+
+    <!-----------------------------------------------------Cards for details------------------------------------------------------>
+
+    <div class="container mt-2">
+         <div class="row">
+             <div class="col-sm-4 col-md-4 col-xl-4 col-xxl-4 mb-5">
+
+
+                <div class="card" id="fcard1">
+                    <div class="card-body">
+                     
+                     <div class="form-check", id="buttons">
+                        <h1 style="margin-left: 20px; font-size: 150%; text-align: center;">Rent Car</h1>
+                     <div id="from">
+                        <div>
+                        <label for="country" id="pickuplabel">Pickup Location</label>
+                        <label for="pickupdate" id="pickupdatelabel">Pickup Date</label>
+                        <label for="pickuptime" id="pickuptimelabel">Pickup Time</label>
+                        <label for="dropoffdate" id="dropoffdatelabel">Dropoff Date</label>
+                        <label for="dropofftime" id="dropofftimelabel">Dropoff Time</label>
+                     </div>
+                     <div id="from-field">
+                        <input type="text" id="pickup" name="country" list="countrylist" autocomplete="off">
+                        <datalist id="countrylist">
+                            <option value="USA">
+                            <option value="Canada">
+                            <option value="Italy">
+                            <option value="UAE">
+                            <option value="Saudi Arabia">
+                            <option value="Mexico"></option>
+                            <option value="Germany"></option>
+                            <option value="Singapore"></option>
+                            <option value="Pakistan"></option>
+
+                                    </option>
+                                </option>
+
+                          </datalist>
+                    
+                        <input type="text" id="pickupdate" autocomplete="off">
+                        <input type="time" id="pickuptime" autocomplete="off">
+                        <input type="text" id="dropoffdate" autocomplete="off">
+                        <input type="time" id="dropofftime" autocomplete="off">
+                    </div>
+                     </div>
+                     </div>
+                     <div class="card-footer">
+                
+                        <a href="#"><input type="button" onclick="openPage()"  style="background-color: blue; color: white; text-align: center; border-color: blue; position:relative; left:870px;" value="Search Cars"> </a>
+                        <a href="car.html"><input type="button"  style="background-color: blue; color: white; text-align: center; border-color: blue; margin-left: -80px; margin-top: 0px;" value="BACK"> </a>
+                        </div>
+                      </div>
+                    </div>
+                    <script>
+                    function openPage() {
+
+                    
+                        var country = document.getElementById("pickup").value;
+                        var pickupdate= document.getElementById("pickupdate").value;
+                        var pickuptime = document.getElementById("pickuptime").value;
+                        var dropoffdate = document.getElementById("dropoffdate").value;
+                        var dropofftime= document.getElementById("dropofftime").value;
+
+
+                        localStorage.setItem("pickup",country);
+                        localStorage.setItem("pickupdate",pickupdate);
+                        localStorage.setItem("pickuptime",pickuptime);
+                        localStorage.setItem("dropoffdate",dropoffdate);
+                        localStorage.setItem("dropofftime",dropofftime);
+        
+
+                        
+    
+                        if (country === "USA"  && pickupdate !="" && pickuptime !="" && dropoffdate!="" && country !="" && dropofftime !="") {
+                          window.location.href = "cardetails.html?country=" + encodeURIComponent(country);
+                        } 
+                        else if (country === "UAE" && pickuptime !="" && pickupdate !="" && dropoffdate !="" && dropofftime!="" && country!="") {
+                            window.location.href = "cardetails.html?country=" + encodeURIComponent(country);
+                        } 
+                        else if (country === "Canada" && pickuptime !="" && pickupdate !="" && dropoffdate !="" && dropofftime!="" && country!="") {
+                            window.location.href = "cardetails.html?country=" + encodeURIComponent(country) ;
+                        } 
+                        else if (country === "Mexico" && pickuptime !="" && pickupdate !="" && dropoffdate !="" && dropofftime!="" && country!="") {
+                            window.location.href = "cardetails.html?country=" + encodeURIComponent(country) ;
+                        } 
+                         else if (country === "Italy" && pickuptime !="" && pickupdate !="" && dropoffdate !="" && dropofftime!="" && country!="") {
+                            window.location.href = "cardetails.html?country=" + encodeURIComponent(country) ;
+                        }  
+                        else if (country === "Saudi Arabia" && pickuptime !="" && pickupdate !="" && dropoffdate !="" && dropofftime!="" && country!="") {
+                            window.location.href = "cardetails.html?country=" + encodeURIComponent(country)  ;
+                        } 
+                        else if (country === "Germany" && pickuptime !="" && pickupdate !="" && dropoffdate !="" && dropofftime!="" && country!="") {
+                            window.location.href = "cardetails.html?country=" + encodeURIComponent(country)  ;
+                        } 
+                        else if (country === "Singapore" && pickuptime !="" && pickupdate !="" && dropoffdate !="" && dropofftime!="" && country!="") {
+                            window.location.href = "cardetails.html?country=" + encodeURIComponent(country)  ;
+                        } 
+                        else if (country === "Pakistan" && pickuptime !="" && pickupdate !="" && dropoffdate !="" && dropofftime!="" && country!="") {
+                            window.location.href = "cardetails.html?country=" + encodeURIComponent(country)  ;
+                        } 
+                        else {
+                          alert("Some Field Empty!");
+                        }
+                      }
+
+                      </script>
+              
+                 </div>
+              
+                </div>
+    </div>
+      
+</div>
+
+
+
+</form>
+</body>
+</html>

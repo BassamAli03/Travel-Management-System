@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Info</title>
+
+<!------------------------------------web icon------------------------------->
+
+<link rel="icon" href="icon.png">
+
+</head>
+<body >
+    
+<!---------------------------------------------------Including CDN------------------------------------------->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+<link rel="stylesheet" type="text/css" href="style.css">
+<link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+<script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+<style>
+    body{
+        background-image: url(pexels-iván-rivero-1046227.jpg);
+        background-size: cover;
+        
+    }
+</style>
+
+
+
+
+<form action="#">
+
+<!-----------------------------------------------Main container------------------------------------------------------>
+
+    
+
+    <div class="row" style=" margin-left: auto; margin-right: auto; color:black; background-position: center;" >
+      <div class="col" >
+<h1 style="font-size: 50px; margin-top: 20px;margin-left: 17px;  font-family:'Times New Roman'">Cars </h1>
+      
+<h3 style="font-size: 35px;margin-left: 20px; font-family:'Times New Roman'">Selected Car Details</h3>
+<p style="font-size: 20px;margin-left: 20px; font-family:'Times New Roman'">Here you will be able to select<br>the car that seems most suitable to you.</p>
+
+</div>
+  </div>
+
+
+    <!-----------------------------------------------------Cards for details------------------------------------------------------>
+
+    <div class="container mt-2">
+         <div class="row">
+             <div class="col-sm-4 col-md-4 col-xl-4 col-xxl-4 mb-5">
+
+
+                <div class="card" id="ccard1" style="display: none;">
+                    <div class="card-body">
+             <img src="alto.jpg" alt="alto Logo" style="display: block; margin-left: 15px; margin-top: 30px;width: 16%; height: auto; " height="150px">
+                <h1 style="margin-left: 20px; margin-top: -100px; font-size: 150%; text-align: center">ALTO (ATF-193)</h1>
+                   <a href="userdetails1.html"><input type="button" onclick="openPage()" style="background-color: blue; color: white; text-align: center; border-color: blue; position:relative; left: 600px; margin-top: 90px ;" value="Select Car "> </a>
+
+                          <p style="margin-left: 230px;margin-top: -100px; font-size: 110%;">4 seats</p>
+                          <p style="margin-left: 230px; font-size: 110%;">1 large bag</p>
+                          <p style="margin-left: 380px;font-size: 110%;margin-top: -85px;">Manual</p>
+                          <p style="margin-left: 380px;font-size: 110%;">AC</p>
+                 <h2 style="margin-left: 450px; margin-top: -100px; font-size: 120%; text-align: center;">Price</h1>
+                        <p style="margin-left: 600px; font-size: 130%;">Rs 10,000</p>
+                         </div>
+                       </div>
+                
+
+                       <div class="card" id="ccard2" style="display: none;">
+                        <div class="card-body">
+                 <img src="civic.jpg" alt="corolla Logo" style="display: block; margin-left: 15px; margin-top: 30px;width: 16%; height: auto; " height="150px">
+                    <h1 style="margin-left: 20px; margin-top: -110px; font-size: 150%; text-align: center">Civic (ZGY-245)</h1>
+                       <a href="userdetails1.html"><input type="button" onclick="openPage()" style="background-color: blue; color: white; text-align: center; border-color: blue; position:relative; left: 600px; margin-top: 90px ;" value="Select Car "> </a>
+
+                       <p style="margin-left: 230px;margin-top: -100px; font-size: 110%;">4 seats</p>
+                       <p style="margin-left: 230px; font-size: 110%;">1 large bag</p>
+                       <p style="margin-left: 380px;font-size: 110%;margin-top: -85px;">Manual</p>
+                       <p style="margin-left: 380px;font-size: 110%;">AC</p>
+              <h2 style="margin-left: 450px; margin-top: -100px; font-size: 120%; text-align: center;">Price</h1>
+                     <p style="margin-left: 600px; font-size: 130%;">Rs 20,000</p>
+                             </div>
+                           </div>
+
+                     <div class="card" id="ccard3" style="display: none;">
+                        <div class="card-body">
+                 <img src="swift.jpg" alt="alto Logo" style="display: block; margin-left: 15px; margin-top: 30px;width: 16%; height: auto; " height="150px">
+                    <h1 style="margin-left: 20px; margin-top: -90px; font-size: 150%; text-align: center">Suzuki Swift (OYT-986)</h1>
+                       <a href="userdetails1.html"><input type="button" onclick="openPage()" style="background-color: blue; color: white; text-align: center; border-color: blue; position:relative; left: 600px; margin-top: 90px ;" value="Select Car "> </a>
+
+                       <p style="margin-left: 230px;margin-top: -100px; font-size: 110%;">4 seats</p>
+                       <p style="margin-left: 230px; font-size: 110%;">1 large bag</p>
+                       <p style="margin-left: 380px;font-size: 110%;margin-top: -85px;">Manual</p>
+                       <p style="margin-left: 380px;font-size: 110%;">AC</p>
+              <h2 style="margin-left: 450px; margin-top: -100px; font-size: 120%; text-align: center;">Price</h1>
+                      <p style="margin-left: 600px; font-size: 130%;">Rs 15,000</p>
+                             </div>
+                           </div>
+                    
+                           <div class="card" id="ccard4" style="display: none;">
+                            <div class="card-body">
+                     <img src="corolla.jpg" alt="corolla Logo" style="display: block; margin-left: 15px; margin-top: 30px;width: 16%; height: auto; " height="150px">
+                        <h1 style="margin-left: 20px; margin-top: -115px; font-size: 150%; text-align: center">Toyota Corolla (LOP-423)</h1>
+                           <a href="userdetails1.html"><input type="button" onclick="openPage()" style="background-color: blue; color: white; text-align: center; border-color: blue; position:relative; left: 600px; margin-top: 90px ;" value="Select Car "> </a>
+   
+                           <p style="margin-left: 230px;margin-top: -100px; font-size: 110%;">4 seats</p>
+                           <p style="margin-left: 230px; font-size: 110%;">1 large bag</p>
+                           <p style="margin-left: 380px;font-size: 110%;margin-top: -85px;">Manual</p>
+                           <p style="margin-left: 380px;font-size: 110%;">AC</p>
+                  <h2 style="margin-left: 450px; margin-top: -100px; font-size: 120%; text-align: center;">Price</h1>
+                                <p style="margin-left: 600px; font-size: 130%;">Rs 22,000</p>
+                                 </div>
+                               </div>
+
+                          <div class="card" id="ccard5" style="display: none;">
+                            <div class="card-body">
+                     <img src="corolla.jpg" alt="alto Logo" style="display: block; margin-left: 15px; margin-top: 30px;width: 16%; height: auto; " height="150px">
+                        <h1 style="margin-left: 20px; margin-top: -115px; font-size: 150%; text-align: center">Toyota Corolla (GIA-924)</h1>
+                           <a href="userdetails1.html"><input type="button" onclick="openPage()" style="background-color: blue; color: white; text-align: center; border-color: blue; position:relative; left: 600px; margin-top: 90px ;" value="Select Car "> </a>
+   
+                           <p style="margin-left: 230px;margin-top: -100px; font-size: 110%;">4 seats</p>
+                           <p style="margin-left: 230px; font-size: 110%;">1 large bag</p>
+                           <p style="margin-left: 380px;font-size: 110%;margin-top: -85px;">Manual</p>
+                           <p style="margin-left: 380px;font-size: 110%;">AC</p>
+                  <h2 style="margin-left: 450px; margin-top: -100px; font-size: 120%; text-align: center;">Price</h1>
+                      <p style="margin-left: 600px; font-size: 130%;">Rs 11,000</p>
+                                 </div>
+                               </div>
+                        
+                               <div class="card" id="ccard6" style="display: none;">
+                                <div class="card-body">
+                         <img src="swift.jpg" alt="corolla Logo" style="display: block; margin-left: 15px; margin-top: 30px;width: 16%; height: auto; " height="150px">
+                            <h1 style="margin-left: 20px; margin-top: -90px; font-size: 150%; text-align: center">Swift (BVC-692)</h1>
+                               <a href="userdetails1.html"><input type="button" onclick="openPage()" style="background-color: blue; color: white; text-align: center; border-color: blue; position:relative; left: 600px; margin-top: 90px ;" value="Select Car "> </a>
+                               <p style="margin-left: 230px;margin-top: -100px; font-size: 110%;">4 seats</p>
+                               <p style="margin-left: 230px; font-size: 110%;">1 large bag</p>
+                               <p style="margin-left: 380px;font-size: 110%;margin-top: -85px;">Manual</p>
+                               <p style="margin-left: 380px;font-size: 110%;">AC</p>
+                      <h2 style="margin-left: 450px; margin-top: -100px; font-size: 120%; text-align: center;">Price</h1>
+                              <p style="margin-left: 600px; font-size: 130%;">Rs 14,000</p>
+                                     </div>
+                                   </div>
+                         <div class="card" id="ccard7" style="display: none;">
+                        <div class="card-body">
+                 <img src="Toyota-Yaris.jpg" alt="alto Logo" style="display: block; margin-left: 15px; margin-top: 30px;width: 16%; height: auto; " height="150px">
+                    <h1 style="margin-left: 20px; margin-top: -120px; font-size: 150%; text-align: center">Toyota Yaris (MCL-812)</h1>
+                       <a href="userdetails1.html"><input type="button" onclick="openPage()" style="background-color: blue; color: white; text-align: center; border-color: blue; position:relative; left: 600px; margin-top: 90px ;" value="Select Car "> </a>
+
+                       <p style="margin-left: 230px;margin-top: -100px; font-size: 110%;">4 seats</p>
+                       <p style="margin-left: 230px; font-size: 110%;">1 large bag</p>
+                       <p style="margin-left: 380px;font-size: 110%;margin-top: -85px;">Manual</p>
+                       <p style="margin-left: 380px;font-size: 110%;">AC</p>
+              <h2 style="margin-left: 450px; margin-top: -100px; font-size: 120%; text-align: center;">Price</h1>
+                     <p style="margin-left: 600px; font-size: 130%;">Rs 22,000</p>
+                             </div>
+                           </div>
+                        
+                           <div class="card" id="ccard8" style="display: none;">
+                            <div class="card-body">
+                     <img src="corolla.jpg" alt="corolla Logo" style="display: block; margin-left: 15px; margin-top: 30px;width: 16%; height: auto; " height="150px">
+                        <h1 style="margin-left: 20px; margin-top: -120px; font-size: 150%; text-align: center">Toyota Corolla (UMB-492)</h1>
+                           <a href="userdetails1.html"><input type="button" onclick="openPage()" style="background-color: blue; color: white; text-align: center; border-color: blue; position:relative; left: 600px; margin-top: 90px ;" value="Select Car "> </a>
+                           <p style="margin-left: 230px;margin-top: -100px; font-size: 110%;">4 seats</p>
+                           <p style="margin-left: 230px; font-size: 110%;">1 large bag</p>
+                           <p style="margin-left: 380px;font-size: 110%;margin-top: -85px;">Manual</p>
+                           <p style="margin-left: 380px;font-size: 110%;">AC</p>
+                  <h2 style="margin-left: 450px; margin-top: -100px; font-size: 120%; text-align: center;">Price</h1>
+                                <p style="margin-left: 600px; font-size: 130%;">Rs 24,000</p>
+                                 </div>
+                               </div>
+                        <div class="card" id="ccard9" style="display: none;">
+                        <div class="card-body">
+                 <img src="blackcivic.jpg" alt="alto Logo" style="display: block; margin-left: 15px; margin-top: 30px;width: 16%; height: auto; " height="150px">
+                    <h1 style="margin-left: 20px; margin-top: -115px; font-size: 150%; text-align: center">Civic (JER-152)</h1>
+                       <a href="userdetails1.html"><input type="button" onclick="openPage()" style="background-color: blue; color: white; text-align: center; border-color: blue; position:relative; left: 600px; margin-top: 90px ;" value="Select Car "> </a>
+
+                       <p style="margin-left: 230px;margin-top: -100px; font-size: 110%;">4 seats</p>
+                       <p style="margin-left: 230px; font-size: 110%;">1 large bag</p>
+                       <p style="margin-left: 380px;font-size: 110%;margin-top: -85px;">Manual</p>
+                       <p style="margin-left: 380px;font-size: 110%;">AC</p>
+              <h2 style="margin-left: 450px; margin-top: -100px; font-size: 120%; text-align: center;">Price</h1>
+                            <p style="margin-left: 600px; font-size: 130%;">Rs 25,000</p>
+                             </div>
+                           </div>
+                                
+                           <div class="card" id="ccard10" style="display: none;">
+                            <div class="card-body">
+                     <img src="alto.jpg" alt="corolla Logo" style="display: block; margin-left: 15px; margin-top: 30px;width: 16%; height: auto; " height="150px">
+                        <h1 style="margin-left: 20px; margin-top: -100px; font-size: 150%; text-align: center">Alto (CTY-623)</h1>
+                           <a href="userdetails1.html"><input type="button"onclick="openPage()"  style="background-color: blue; color: white; text-align: center; border-color: blue; position:relative; left: 600px; margin-top: 90px ;" value="Select Car "> </a>
+   
+                           <p style="margin-left: 230px;margin-top: -100px; font-size: 110%;">4 seats</p>
+                           <p style="margin-left: 230px; font-size: 110%;">1 large bag</p>
+                           <p style="margin-left: 380px;font-size: 110%;margin-top: -85px;">Manual</p>
+                           <p style="margin-left: 380px;font-size: 110%;">AC</p>
+                  <h2 style="margin-left: 450px; margin-top: -100px; font-size: 120%; text-align: center;">Price</h1>
+                                <p style="margin-left: 600px; font-size: 130%;">Rs 18,000</p>
+                                 </div>
+                               </div>
+
+                      <div class="card" id="ccard11" style="display: none;">
+                         <div class="card-body">
+                  <img src="alto.jpg" alt="alto Logo" style="display: block; margin-left: 15px; margin-top: 30px;width: 16%; height: auto; " height="150px">
+                     <h1 style="margin-left: 20px; margin-top: -105px; font-size: 150%; text-align: center">ALTO (ACD-921)</h1>
+                        <a href="userdetails1.html"><input type="button" onclick="openPage()" style="background-color: blue; color: white; text-align: center; border-color: blue; position:relative; left: 600px; margin-top: 90px ;" value="Select Car "> </a>
+
+                        <p style="margin-left: 230px;margin-top: -100px; font-size: 110%;">4 seats</p>
+                        <p style="margin-left: 230px; font-size: 110%;">1 large bag</p>
+                        <p style="margin-left: 380px;font-size: 110%;margin-top: -85px;">Manual</p>
+                        <p style="margin-left: 380px;font-size: 110%;">AC</p>
+               <h2 style="margin-left: 450px; margin-top: -100px; font-size: 120%; text-align: center;">Price</h1>
+                             <p style="margin-left: 600px; font-size: 130%;">Rs 13,000</p>
+                              </div>
+                            </div>
+                                           
+                            <div class="card" id="ccard12" style="display: none;">
+                                <div class="card-body">
+                         <img src="corolla.jpg" alt="corolla Logo" style="display: block; margin-left: 15px; margin-top: 30px;width: 16%; height: auto; " height="150px">
+                            <h1 style="margin-left: 20px; margin-top: -110px; font-size: 150%; text-align: center">Toyota Corolla (HIJ-902)</h1>
+                               <a href="userdetails1.html"><input type="button" onclick="openPage()" style="background-color: blue; color: white; text-align: center; border-color: blue; position:relative; left: 600px; margin-top: 90px ;" value="Select Car "> </a>
+       
+                               <p style="margin-left: 230px;margin-top: -100px; font-size: 110%;">4 seats</p>
+                               <p style="margin-left: 230px; font-size: 110%;">1 large bag</p>
+                               <p style="margin-left: 380px;font-size: 110%;margin-top: -85px;">Manual</p>
+                               <p style="margin-left: 380px;font-size: 110%;">AC</p>
+                      <h2 style="margin-left: 450px; margin-top: -100px; font-size: 120%; text-align: center;">Price</h1>
+                                           <p style="margin-left: 600px; font-size: 130%;">Rs 24,000</p>
+                                     </div>
+                                   </div>
+                                   
+                                   <div class="card" id="ccard13" style="display: none;">
+                                    <div class="card-body">
+                             <img src="Toyota-Yaris.jpg" alt="corolla Logo" style="display: block; margin-left: 15px; margin-top: 30px;width: 16%; height: auto; " height="150px">
+                                <h1 style="margin-left: 20px; margin-top: -110px; font-size: 150%; text-align: center">Toyota-Yaris (AFD-129)</h1>
+                                   <a href="userdetails1.html"><input type="button" onclick="openPage()" style="background-color: blue; color: white; text-align: center; border-color: blue; position:relative; left: 600px; margin-top: 90px ;" value="Select Car "> </a>
+           
+                                   <p style="margin-left: 230px;margin-top: -100px; font-size: 110%;">4 seats</p>
+                                   <p style="margin-left: 230px; font-size: 110%;">1 large bag</p>
+                                   <p style="margin-left: 380px;font-size: 110%;margin-top: -85px;">Manual</p>
+                                   <p style="margin-left: 380px;font-size: 110%;">AC</p>
+                          <h2 style="margin-left: 450px; margin-top: -100px; font-size: 120%; text-align: center;">Price</h1>
+                                        <p style="margin-left: 600px; font-size: 130%;">Rs 21,000</p>
+                                         </div>
+                                       </div>   
+                              <div class="card" id="ccard14" style="display: none;">
+                                <div class="card-body">
+                         <img src="alto.jpg" alt="corolla Logo" style="display: block; margin-left: 15px; margin-top: 30px;width: 16%; height: auto; " height="150px">
+                            <h1 style="margin-left: 20px; margin-top: -100px; font-size: 150%; text-align: center">Alto (KLO-723)</h1>
+                               <a href="userdetails1.html"><input type="button" onclick="openPage()" style="background-color: blue; color: white; text-align: center; border-color: blue; position:relative; left: 600px; margin-top: 90px ;" value="Select Car "> </a>
+       
+                               <p style="margin-left: 230px;margin-top: -100px; font-size: 110%;">4 seats</p>
+                               <p style="margin-left: 230px; font-size: 110%;">1 large bag</p>
+                               <p style="margin-left: 380px;font-size: 110%;margin-top: -85px;">Manual</p>
+                               <p style="margin-left: 380px;font-size: 110%;">AC</p>
+                      <h2 style="margin-left: 450px; margin-top: -100px; font-size: 120%; text-align: center;">Price</h1>
+                                    <p style="margin-left: 600px; font-size: 130%;">Rs 16,000</p>
+                                     </div>
+                                   </div>
+
+                                   <div class="card" id="ccard15" style="display: none;">
+                                    <div class="card-body">
+                             <img src="civic.jpg" alt="alto Logo" style="display: block; margin-left: 15px; margin-top: 30px;width: 16%; height: auto; " height="150px">
+                                <h1 style="margin-left: 20px; margin-top: -115px; font-size: 150%; text-align: center">Civic (ViW-274)</h1>
+                                   <a href="userdetails1.html"><input type="button" onclick="openPage()" style="background-color: blue; color: white; text-align: center; border-color: blue; position:relative; left: 600px; margin-top: 90px ;" value="Select Car "> </a>
+            
+                                   <p style="margin-left: 230px;margin-top: -100px; font-size: 110%;">4 seats</p>
+                                   <p style="margin-left: 230px; font-size: 110%;">1 large bag</p>
+                                   <p style="margin-left: 380px;font-size: 110%;margin-top: -85px;">Manual</p>
+                                   <p style="margin-left: 380px;font-size: 110%;">AC</p>
+                          <h2 style="margin-left: 450px; margin-top: -100px; font-size: 120%; text-align: center;">Price</h1>
+                                        <p style="margin-left: 600px; font-size: 130%;">Rs 16,000</p>
+                                         </div>
+                                       </div>
+                                            <div class="card" id="ccard16" style="display: none;">
+                                    <div class="card-body">
+                             <img src="swift.jpg" alt="corolla Logo" style="display: block; margin-left: 15px; margin-top: 30px;width: 16%; height: auto; " height="150px">
+                                <h1 style="margin-left: 20px; margin-top: -90px; font-size: 150%; text-align: center">Swift (RHY-727)</h1>
+                                   <a href="userdetails1.html"><input type="button" onclick="openPage()" style="background-color: blue; color: white; text-align: center; border-color: blue; position:relative; left: 600px; margin-top: 90px ;" value="Select Car "> </a>
+           
+                                   <p style="margin-left: 230px;margin-top: -100px; font-size: 110%;">4 seats</p>
+                                   <p style="margin-left: 230px; font-size: 110%;">1 large bag</p>
+                                   <p style="margin-left: 380px;font-size: 110%;margin-top: -85px;">Manual</p>
+                                   <p style="margin-left: 380px;font-size: 110%;">AC</p>
+                          <h2 style="margin-left: 450px; margin-top: -100px; font-size: 120%; text-align: center;">Price</h1>
+                                        <p style="margin-left: 600px; font-size: 130%;">Rs 21,000</p>
+                                         </div>
+                                       </div>
+    
+                                       <div class="card" id="ccard17" style="display: none;">
+                                        <div class="card-body">
+                                 <img src="Toyota-Yaris.jpg" alt="alto Logo" style="display: block; margin-left: 15px; margin-top: 30px;width: 16%; height: auto; " height="150px">
+                                    <h1 style="margin-left: 20px; margin-top: -110px; font-size: 150%; text-align: center">Toyota Yaris (ARE-164)</h1>
+                                       <a href="userdetails1.html"><input type="button" onclick="openPage()" style="background-color: blue; color: white; text-align: center; border-color: blue; position:relative; left: 600px; margin-top: 90px ;" value="Select Car "> </a>
+                
+                                       <p style="margin-left: 230px;margin-top: -100px; font-size: 110%;">4 seats</p>
+                                       <p style="margin-left: 230px; font-size: 110%;">1 large bag</p>
+                                       <p style="margin-left: 380px;font-size: 110%;margin-top: -85px;">Manual</p>
+                                       <p style="margin-left: 380px;font-size: 110%;">AC</p>
+                              <h2 style="margin-left: 450px; margin-top: -100px; font-size: 120%; text-align: center;">Price</h1>
+                                             <p style="margin-left: 600px; font-size: 130%;">Rs 19,000</p>
+                                             </div>
+                                           </div>
+                                 <div class="card" id="ccard18" style="display: none;">
+                                    <div class="card-body">
+                             <img src="blackcivic.jpg" alt="corolla Logo" style="display: block; margin-left: 15px; margin-top: 30px;width: 16%; height: auto; " height="150px">
+                                <h1 style="margin-left: 20px; margin-top: -110px; font-size: 150%; text-align: center">Civic (IWE-165)</h1>
+                                   <a href="userdetails1.html"><input type="button" onclick="openPage()" style="background-color: blue; color: white; text-align: center; border-color: blue; position:relative; left: 600px; margin-top: 90px ;" value="Select Car "> </a>
+           
+                                   <p style="margin-left: 230px;margin-top: -100px; font-size: 110%;">4 seats</p>
+                                   <p style="margin-left: 230px; font-size: 110%;">1 large bag</p>
+                                   <p style="margin-left: 380px;font-size: 110%;margin-top: -85px;">Manual</p>
+                                   <p style="margin-left: 380px;font-size: 110%;">AC</p>
+                          <h2 style="margin-left: 450px; margin-top: -100px; font-size: 120%; text-align: center;">Price</h1>
+                             <p style="margin-left: 600px; font-size: 130%;">Rs 20,000</p>
+                                         </div>
+                                       </div>
+    
+                        <script>
+                
+                            var queryString = window.location.search;
+                            var urlParams = new URLSearchParams(queryString);
+                            var country = urlParams.get('country');
+                        
+                        
+
+                            if (country === "USA") {
+                            document.getElementById("ccard1").style.display = "block"; document.getElementById("ccard2").style.display = "block";
+                            } else if (country=== "UAE") {
+                                document.getElementById("ccard3").style.display = "block"; document.getElementById("ccard4").style.display = "block";
+                            } else if (country === "Saudi Arabia") {
+                                document.getElementById("ccard5").style.display = "block"; document.getElementById("ccard6").style.display = "block";
+                            } else if (country === "Italy") {
+                                document.getElementById("ccard7").style.display = "block"; document.getElementById("ccard8").style.display = "block";
+                            } else if (country === "Singapore") {
+                                document.getElementById("ccard9").style.display = "block"; document.getElementById("ccard10").style.display = "block";
+                            } else if (country === "Canada") {
+                                document.getElementById("ccard11").style.display = "block"; document.getElementById("ccard12").style.display = "block";
+                            } else if (country === "Mexico") {
+                                document.getElementById("ccard13").style.display = "block"; document.getElementById("ccard14").style.display = "block";
+                            } else if (country === "Germany") {
+                                document.getElementById("ccard15").style.display = "block"; document.getElementById("ccard16").style.display = "block";
+                            } else if (country === "Pakistan") {
+                                document.getElementById("ccard17").style.display = "block"; document.getElementById("ccard18").style.display = "block";
+                            } else {
+                            alert("Invalid card number entered!");
+                            }
+                            
+                        
+                        </script>
+
+<script>
+   function openPage() {
+
+       var price2;
+       var carnum;
+
+       document.getElementById('ccard1').addEventListener('click', function() {
+       price2 = 10000;
+       carnum = "ATF-193";
+       localStorage.setItem('price2', price2);
+       localStorage.setItem('carnum', carnum);
+       });
+       document.getElementById('ccard2').addEventListener('click', function() {
+         price2 = 20000;
+       carnum = "ZGY-245";
+       localStorage.setItem('price2', price2);
+       localStorage.setItem('carnum', carnum);
+       });
+       document.getElementById('ccard3').addEventListener('click', function() {
+         price2 = 15000;
+       carnum = "OYT-986";
+       localStorage.setItem('price2', price2);
+       localStorage.setItem('carnum', carnum);
+       });
+       document.getElementById('ccard4').addEventListener('click', function() {
+         price2 = 22000;
+       carnum = "LOP-423";
+       localStorage.setItem('price2', price2);
+       localStorage.setItem('carnum', carnum);
+       });
+       document.getElementById('ccard5').addEventListener('click', function() {
+         price2 = 11000;
+       carnum = "GIA-924";
+       localStorage.setItem('price2', price2);
+       localStorage.setItem('carnum', carnum);
+       });
+       document.getElementById('ccard6').addEventListener('click', function() {
+         price2 = 14000;
+       carnum = "BVC-692";
+       localStorage.setItem('price2', price2);
+       localStorage.setItem('carnum', carnum);
+       });
+       document.getElementById('ccard7').addEventListener('click', function() {
+         price2 = 22000;
+       carnum = "MCL-812";
+       localStorage.setItem('price2', price2);
+       localStorage.setItem('carnum', carnum);
+       });
+       document.getElementById('ccard8').addEventListener('click', function() {
+         price2 = 24000;
+       carnum = "UMB-492";
+       localStorage.setItem('price2', price2);
+       localStorage.setItem('carnum', carnum);
+       });
+       document.getElementById('ccard9').addEventListener('click', function() {
+         price2 = 25000;
+       carnum = "JER-152";
+       localStorage.setItem('price2', price2);
+       localStorage.setItem('carnum', carnum);
+       });
+       document.getElementById('ccard10').addEventListener('click', function() {
+         price2 = 18000;
+       carnum = "CTY-623";
+       localStorage.setItem('price2', price2);
+       localStorage.setItem('carnum', carnum);
+       });
+       document.getElementById('ccard11').addEventListener('click', function() {
+         price2 = 13000;
+       carnum = "ACD-921";
+       localStorage.setItem('price2', price2);
+       localStorage.setItem('carnum', carnum);
+       });
+       document.getElementById('ccard12').addEventListener('click', function() {
+         price2 = 24000;
+       carnum = "HIJ-902";
+       localStorage.setItem('price2', price2);
+       localStorage.setItem('carnum', carnum);
+       });
+       document.getElementById('ccard13').addEventListener('click', function() {
+         price2 = 21000;
+       carnum = "AFD-129";
+       localStorage.setItem('price2', price2);
+       localStorage.setItem('carnum', carnum);
+       });
+       document.getElementById('ccard14').addEventListener('click', function() {
+         price2 = 16000;
+       carnum = "KLO-723";
+       localStorage.setItem('price2', price2);
+       localStorage.setItem('carnum', carnum);
+       });
+       document.getElementById('ccard15').addEventListener('click', function() {
+         price2 = 16000;
+       carnum = "ViW-274";
+       localStorage.setItem('price2', price2);
+       localStorage.setItem('carnum', carnum);
+       });
+       document.getElementById('ccard16').addEventListener('click', function() {
+         price2 = 21000;
+       carnum = "RHY-7277";
+       localStorage.setItem('price2', price2);
+       localStorage.setItem('carnum', carnum);
+       });
+       document.getElementById('ccard17').addEventListener('click', function() {
+         price2 = 19000;
+       carnum = "ARE-164";
+       localStorage.setItem('price2', price2);
+       localStorage.setItem('carnum', carnum);
+       });
+       document.getElementById('ccard18').addEventListener('click', function() {
+         price2 = 20000;
+       carnum = "IWE-165";
+       localStorage.setItem('price2', price2);
+       localStorage.setItem('carnum', carnum);
+       });
+
+}
+   
+   </script>
+
+                 </div>
+
+                </div>
+            
+    </div>
+
+    <a href="carbooking.html"><input type="button" style="background-color: blue; color: white; text-align: center; border-color: blue; margin-left: 30px; margin-top: 130px;" value="BACK"> </a>
+      
+      
+      
+      
+      
+      
+</div>
+
+
+
+</form>
+</body>
+</html>

@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flight Info</title>
+
+<!------------------------------------web icon------------------------------->
+
+<link rel="icon" href="icon.png">
+
+</head>
+<body >
+    
+<!---------------------------------------------------Including CDN------------------------------------------->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+<link rel="stylesheet" type="text/css" href="style.css">
+<link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+<script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<style>
+    body{
+        background-image: url(beach.jpg);
+        background-size: cover;
+        
+    }
+</style>
+
+
+<form method="post" action="/adduser">
+
+<!-----------------------------------------------Main container------------------------------------------------------>
+
+  
+
+
+    <div class="row" style=" margin-left: auto; margin-right: auto; color:black; background-position: center;" >
+      <div class="col" >
+  <h1 style="font-size: 50px; margin-top: 20px;margin-left: 17px;  font-family:'Times New Roman'">Packages </h1>
+      
+  <h3 style="font-size: 35px;margin-left: 20px; font-family:'Times New Roman'">Information Details</h3>
+  <p style="font-size: 20px;margin-left: 20px; font-family:'Times New Roman'">Here you will enter your necessary <br>information and payment details.</p>
+  
+  </div>
+  </div>
+
+    <!-----------------------------------------------------Cards for details------------------------------------------------------>
+
+    <div class="container mt-2">
+         <div class="row">
+             <div class="col-sm-4 col-md-4 col-xl-4 col-xxl-4 mb-5">
+
+            
+                <div class="card" id="ucard1">
+                    <div class="card-body">
+                        <h1 style="margin-left: 100px; font-size: 150%; text-align: left;">User Details</h1>
+                        <h1 style="position: absolute; top: 0; left: 500px; z-index: 2;font-size: 150%;">Payment Details</h5>
+            
+                     <div class="form-group">
+                        <label for="fname"  >First Name</label>
+                        <input type="text" style="width: 300px;" class= "form-control" id="fname" name="first" maxlength="50" autocomplete="off" >
+                        </div>
+                  <div class="form-group">
+                   <label for="lname" >Last Name</label>
+               <input type="text"style="width: 300px;" class= "form-control" id="lname" name="last" maxlength="50" autocomplete="off">
+               </div>
+
+                  <div class="form-group">
+                   <label for="email" >Email Address</label>
+                   <input type="text"style="width: 300px;" class= "form-control" id="email" name="email" maxlength="50" autocomplete="off">
+                  </div>
+
+                 <div class="form-group">
+                  <label for="pnum" >Phone Number</label>
+                  <input type="text"style="width: 300px;" class= "form-control" id="pnum" name="pnum" maxlength="20" autocomplete="off">
+                  </div>
+
+                  <div class="form-group" id="cname">
+                    <label for="cardname" >Card Holder Name</label>
+                    <input type="text"style="width: 300px;" class= "form-control" id="cardholder"name="cname" maxlength="50" autocomplete="off">
+                    </div>
+
+                    <div class="form-group" id="cnum">
+                        <label for="cardname" >Card Number</label>
+                        <input type="text"style="width: 300px;" class= "form-control" id="cardnum"name="cnum" maxlength=" 30" autocomplete="off">
+                        </div>
+             <div class="form-group" id="cvc">
+               <label for="cardname" >CVC</label>
+                       <input type="text"style="width: 100px;" class= "form-control" id="security" name="cvc" maxlength=" 3" autocomplete="off" >
+                       </div>
+                       <div class="form-group" id="emonth">
+                     <label for="cardname" >Expiry Month</label>
+                        <input type="text"style="width: 100px;" class= "form-control" id="expirymonth"name="emonth" maxlength=" 2"autocomplete="off" >
+                      </div>
+                    <div class="form-group" id="eyear">
+                      <label for="cardname" >Expiry Year</label>
+                       <input type="text"style="width: 100px;" class= "form-control" id="expiryyear" name="eyear" maxlength=" 4" autocomplete="off" >
+                        </div>
+                     </div>
+                     <div class="card-footer">
+                
+                        <a ><input type="button" onclick="openPage()"   style="background-color: blue; color: white; text-align: center; border-color: blue; position:relative; left:660px;" value="Book Package"> </a>
+                        <a href="packages.html"><input type="button"  style="background-color: blue; color: white; text-align: center; border-color: blue; margin-left: -60px; margin-top: 0px;" value="BACK"> </a>
+
+                        </div>
+                      </div>
+                <script>
+                
+                    function openPage() {
+                      
+
+                        var fname = document.getElementById("fname").value;
+                        var lname = document.getElementById("lname").value;
+                        var email = document.getElementById("email").value;
+                        var pnum = document.getElementById("pnum").value;
+                        var cardholder = document.getElementById("cardholder").value;
+                        var cardnum = document.getElementById("cardnum").value;
+                        var security = document.getElementById("security").value;
+                        var expirymonth = document.getElementById("expirymonth").value;
+                        var expiryyear = document.getElementById("expiryyear").value;
+                    
+                        if (fname != "" && lname != "" && email !="" && pnum !="" && cardholder !="" && cardnum !="" && security !="" && expirymonth !="" && expiryyear != "") {
+                          window.location.href = "packagereciept.html?fname=" + encodeURIComponent(fname) + "&lname=" + encodeURIComponent(lname) + "&email=" + encodeURIComponent(email) + "&pnum=" + encodeURIComponent(pnum) ;
+                        } 
+                        else {
+                          alert("Some Field Empty!");
+                        }
+
+                        
+                      }
+                </script>
+          
+                                       
+                    </div>
+                 </div>
+                </div>
+         
+</div>
+
+</form>
+</body>
+</html>

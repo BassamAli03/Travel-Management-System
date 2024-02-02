@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flight Info</title>
+
+<!------------------------------------web icon------------------------------->
+
+<link rel="icon" href="icon.png">
+
+</head>
+<body >
+    
+<!---------------------------------------------------Including CDN------------------------------------------->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+<link rel="stylesheet" type="text/css" href="style.css">
+<link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+<script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+<style>
+    body{
+        background-image: url(plane.jpg);
+        background-size: cover;
+        
+    }
+</style>
+
+
+
+
+<form action="#">
+
+<!-----------------------------------------------Main container------------------------------------------------------>
+
+    
+
+    <div class="row" style=" margin-left: auto; margin-right: auto; color:black; background-position: center;" >
+        <div class="col" >
+<h1 style="font-size: 50px; margin-top: 20px;margin-left: 17px;  font-family:'Times New Roman'">Flights </h1>
+        
+<h3 style="font-size: 35px;margin-left: 20px; font-family:'Times New Roman'">Flight Cancellation</h3>
+<p style="font-size: 20px;margin-left: 20px; font-family:'Times New Roman'">Here you will be able to select<br>the flight that you want to cancel.</p>
+
+</div>
+    </div>
+
+
+    <!-----------------------------------------------------Cards for details------------------------------------------------------>
+
+    <div class="container mt-2">
+         <div class="row">
+             <div class="col-sm-4 col-md-4 col-xl-4 col-xxl-4 mb-5">
+
+
+                <div class="card" id="cancelcard1" style="display: block;">
+                    
+                    <div class="card-body">
+                        <h1 style="margin-left: 200px; font-size: 150%; text-align: left;">Booked Flights</h1>
+                        <h2 style="margin-top: 20px; font-size: 140%; text-align: center;">Flight Number: <span id="flightnum"></span></h2>
+                        <h2 style="margin-top: 20px;font-size: 120%; text-align: left;">Email Address: <span id="email"></span></h2>
+                        <h2 style="margin-top: 20px;font-size: 120%; text-align: left;">Departure Date: <span id="date1"></span></h2>
+                        <h2 style="margin-top: 20px;font-size: 120%; text-align: left;">Arrival Date: <span id="date2"></span></h2>
+                        <h2 style="margin-top: 20px;font-size: 120%; text-align: left;">Passengers: <span id="passengers"></span></h2>
+                        <h2 style="margin-top: 20px;font-size: 120%; text-align: left;">Price: <span id="price"></span></h2>
+
+                        <div class="card-footer">
+                
+                            <a><input type="button" onclick="openPage()" style="background-color: blue; color: white; text-align: center; border-color: blue; position:relative; left: 460px; margin-top: 0px ;" value="Cancel Flight"> </a>
+                            <a href="cancelflight.html"><input type="button" style="background-color: blue; color: white; text-align: center; border-color: blue; margin-left: -90px; margin-top: 0px;" value="BACK"> </a>
+          
+                            </div>
+
+                      </div>
+                     
+                    </div>
+                
+
+            
+
+                        <script>
+                    
+                    var date1= localStorage.getItem("date1");
+                    var date2= localStorage.getItem("date2");
+                    var passengers= localStorage.getItem("passengers");
+                    var price = localStorage.getItem("price");
+                    var flightnum= localStorage.getItem("flightnum");
+                    var email = localStorage.getItem("email");
+
+                    document.getElementById("date1").textContent=date1;
+                    document.getElementById("date2").textContent=date2;
+                    document.getElementById("passengers").textContent=passengers;
+                    document.getElementById("price").textContent=price;
+                    document.getElementById("flightnum").textContent=flightnum;
+                    document.getElementById("email").textContent=email;       
+                        
+                        </script>
+                        
+
+                        <script>
+                        function openPage() {
+                            if(confirm("Are you sure you want to cancel your booking?"))
+                            {
+                            localStorage.clear();
+                            alert("FLIGHT CANCELLED SUCCESSFULLY!!");
+                            window.location.href = "travels.html";
+                            }
+                        
+
+                    }
+                        
+                        </script>
+
+                 </div>
+
+                </div>
+            
+    </div>
+
+      
+      
+      
+      
+      
+      
+</div>
+
+
+
+</form>
+</body>
+</html>

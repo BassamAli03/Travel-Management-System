@@ -1,0 +1,718 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Info</title>
+
+<!------------------------------------web icon------------------------------->
+
+<link rel="icon" href="icon.png">
+
+</head>
+<body >
+    
+<!---------------------------------------------------Including CDN------------------------------------------->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+<link rel="stylesheet" type="text/css" href="style.css">
+<link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+<script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+<style>
+    body{
+        background-image: url(pexels-pixabay-258154.jpg);
+        background-size: cover;
+        
+    }
+</style>
+
+
+
+
+<form action="#">
+
+<!-----------------------------------------------Main container------------------------------------------------------>
+
+    
+
+    <div class="row" style=" margin-left: auto; margin-right: auto; color:black; background-position: center;" >
+      <div class="col" >
+  <h1 style="font-size: 50px; margin-top: 20px;margin-left: 17px;  font-family:'Times New Roman'">Hotel Booking </h1>
+      
+  <h3 style="font-size: 35px;margin-left: 20px; font-family:'Times New Roman'">Selected Hotel Details</h3>
+  <p style="font-size: 20px;margin-left: 20px; font-family:'Times New Roman'">Here you will be able to select<br>the Hotels that seems most suitable to you.</p>
+  
+  </div>
+  </div>
+
+    <!-----------------------------------------------------Cards for details------------------------------------------------------>
+
+    <div class="container mt-2">
+         <div class="row">
+             <div class="col-sm-4 col-md-4 col-xl-4 col-xxl-4 mb-5">
+
+
+                <div class="card" id="hcard1" style="display: none;">
+                    
+                    <div class="card-body">
+                        <img src="hotel.jpg" alt="hotel Logo" style="display: block; margin-left: 15px; margin-top: 40px;width: 16%; height: auto; " height="150px">
+                        <h1 style="margin-left: 20px; margin-top: -135px; font-size: 150%; text-align: center;">Trump International Hotel, Las Vegas</h1>
+                        <a href="hoteluseretails.html"><input type="button" onclick="openPage()" style="background-color: blue; color: white; text-align: center; border-color: blue; position:relative; left: 870px; margin-top: 90px ;" value="Select Hotel"> </a>
+                        <img src="breakfast.png" alt="breakfast" style="display:block; margin-left: 250px; margin-top: -100px; width: 50px; height: auto;">
+                        <p style="margin-left: -450px; margin-top: 0px; font-size: 100%; text-align: center;">Breakfast Included </p>
+                        <img src="tub.png" alt="tub" style="display:block; margin-left: 380px; margin-top: -90px; width: 40px; height: auto;">
+                        <p style="margin-left: -180px; margin-top: 10px; font-size: 100%; text-align: center;">Hot Tub</p>
+                        <img src="garage.png" alt="garage" style="display:block; margin-left:500px; margin-top: -85px; width: 38px; height: auto;">
+                        <p style="margin-left: 50px; margin-top: 5px; font-size: 100%; text-align: center;">Garage</p>
+                        <img src="pool.png" alt="pool" style="display:block; margin-left:600px; margin-top: -85px; width: 45px; height: auto;">
+                        <p style="margin-left: 250px; margin-top: 3px; font-size: 100%; text-align: center;">Pool</p>
+                        <h2 style="margin-left: 650px; margin-top: -100px; font-size: 160%; text-align: center;">Price per Night </h1>
+                            <p style="margin-left: 780px; font-size: 130%;">20,000 Rs</p>
+                      </div>
+                     
+                    </div>
+                
+
+                    <div class="card" id="hcard2" style="display: none;">
+                    
+                      <div class="card-body">
+                          <img src="hotel2.jpg" alt="hotel Logo" style="display: block; margin-left: 15px; margin-top: 40px;width: 16%; height: auto; " height="150px">
+                          <h1 style="margin-left: 20px; margin-top: -135px; font-size: 150%; text-align: center;">Caesar's Palace </h1>
+                          <a href="hoteluseretails.html"><input type="button"onclick="openPage()" style="background-color: blue; color: white; text-align: center; border-color: blue; position:relative; left: 870px; margin-top: 90px ;" value="Select Hotel"> </a>
+                          <img src="breakfast.png" alt="breakfast" style="display:block; margin-left: 250px; margin-top: -100px; width: 50px; height: auto;">
+                          <p style="margin-left: -450px; margin-top: 0px; font-size: 100%; text-align: center;">Breakfast Included </p>
+                          <img src="tub.png" alt="tub" style="display:block; margin-left: 380px; margin-top: -90px; width: 40px; height: auto;">
+                          <p style="margin-left: -180px; margin-top: 10px; font-size: 100%; text-align: center;">Hot Tub</p>
+                          <img src="garage.png" alt="garage" style="display:block; margin-left:500px; margin-top: -85px; width: 38px; height: auto;">
+                          <p style="margin-left: 50px; margin-top: 5px; font-size: 100%; text-align: center;">Garage</p>
+                          <img src="pool.png" alt="pool" style="display:block; margin-left:600px; margin-top: -85px; width: 45px; height: auto;">
+                          <p style="margin-left: 250px; margin-top: 3px; font-size: 100%; text-align: center;">Pool</p>
+                          <h2 style="margin-left: 650px; margin-top: -100px; font-size: 160%; text-align: center;">Price per Night </h1>
+                              <p style="margin-left: 780px; font-size: 130%;">15,000 Rs</p>
+                        </div>
+                       
+                      </div>
+
+                      <div class="card" id="hcard3" style="display: none;">
+                    
+                        <div class="card-body">
+                            <img src="hotel3.jpg" alt="hotel Logo" style="display: block; margin-left: 15px; margin-top: 40px;width: 16%; height: auto; " height="150px">
+                            <h1 style="margin-left: 20px; margin-top: -135px; font-size: 150%; text-align: center;">Hilton Square</h1>
+                            <a href="hoteluseretails.html"><input type="button"onclick="openPage()" style="background-color: blue; color: white; text-align: center; border-color: blue; position:relative; left: 870px; margin-top: 90px ;" value="Select Hotel"> </a>
+                            <img src="breakfast.png" alt="breakfast" style="display:block; margin-left: 250px; margin-top: -100px; width: 50px; height: auto;">
+                            <p style="margin-left: -450px; margin-top: 0px; font-size: 100%; text-align: center;">Breakfast Included </p>
+                            <img src="tub.png" alt="tub" style="display:block; margin-left: 380px; margin-top: -90px; width: 40px; height: auto;">
+                            <p style="margin-left: -180px; margin-top: 10px; font-size: 100%; text-align: center;">Hot Tub</p>
+                            <img src="garage.png" alt="garage" style="display:block; margin-left:500px; margin-top: -85px; width: 38px; height: auto;">
+                            <p style="margin-left: 50px; margin-top: 5px; font-size: 100%; text-align: center;">Garage</p>
+                            <img src="pool.png" alt="pool" style="display:block; margin-left:600px; margin-top: -85px; width: 45px; height: auto;">
+                            <p style="margin-left: 250px; margin-top: 3px; font-size: 100%; text-align: center;">Pool</p>
+                            <h2 style="margin-left: 650px; margin-top: -100px; font-size: 160%; text-align: center;">Price per Night </h1>
+                                <p style="margin-left: 780px; font-size: 130%;">9,000 Rs</p>
+                          </div>
+                         
+                        </div>
+
+                        <div class="card" id="hcard4" style="display: none;">
+                    
+                          <div class="card-body">
+                              <img src="hotel4.jpg" alt="hotel Logo" style="display: block; margin-left: 15px; margin-top: 40px;width: 16%; height: auto; " height="150px">
+                              <h1 style="margin-left: 20px; margin-top: -115px; font-size: 150%; text-align: center;">Empire Hotel</h1>
+                              <a href="hoteluseretails.html"><input type="button" onclick="openPage()"style="background-color: blue; color: white; text-align: center; border-color: blue; position:relative; left: 870px; margin-top: 90px ;" value="Select Hotel"> </a>
+                              <img src="breakfast.png" alt="breakfast" style="display:block; margin-left: 250px; margin-top: -100px; width: 50px; height: auto;">
+                              <p style="margin-left: -450px; margin-top: 0px; font-size: 100%; text-align: center;">Breakfast Included </p>
+                              <img src="tub.png" alt="tub" style="display:block; margin-left: 380px; margin-top: -90px; width: 40px; height: auto;">
+                              <p style="margin-left: -180px; margin-top: 10px; font-size: 100%; text-align: center;">Hot Tub</p>
+                              <img src="garage.png" alt="garage" style="display:block; margin-left:500px; margin-top: -85px; width: 38px; height: auto;">
+                              <p style="margin-left: 50px; margin-top: 5px; font-size: 100%; text-align: center;">Garage</p>
+                              <img src="pool.png" alt="pool" style="display:block; margin-left:600px; margin-top: -85px; width: 45px; height: auto;">
+                              <p style="margin-left: 250px; margin-top: 3px; font-size: 100%; text-align: center;">Pool</p>
+                              <h2 style="margin-left: 650px; margin-top: -100px; font-size: 160%; text-align: center;">Price per Night </h1>
+                                  <p style="margin-left: 780px; font-size: 130%;">5,000 Rs</p>
+                            </div>
+                           
+                          </div>
+
+                    
+                          <div class="card" id="hcard5" style="display: none;">
+                    
+                            <div class="card-body">
+                                <img src="hotel6.jpg" alt="hotel Logo" style="display: block; margin-left: 15px; margin-top: 40px;width: 16%; height: auto; " height="150px">
+                                <h1 style="margin-left: 20px; margin-top: -135px; font-size: 150%; text-align: center;">Bellagio Hotel, Toronto</h1>
+                                <a href="hoteluseretails.html"><input type="button"onclick="openPage()" style="background-color: blue; color: white; text-align: center; border-color: blue; position:relative; left: 870px; margin-top: 90px ;" value="Select Hotel"> </a>
+                                <img src="breakfast.png" alt="breakfast" style="display:block; margin-left: 250px; margin-top: -100px; width: 50px; height: auto;">
+                                <p style="margin-left: -450px; margin-top: 0px; font-size: 100%; text-align: center;">Breakfast Included </p>
+                                <img src="tub.png" alt="tub" style="display:block; margin-left: 380px; margin-top: -90px; width: 40px; height: auto;">
+                                <p style="margin-left: -180px; margin-top: 10px; font-size: 100%; text-align: center;">Hot Tub</p>
+                                <img src="garage.png" alt="garage" style="display:block; margin-left:500px; margin-top: -85px; width: 38px; height: auto;">
+                                <p style="margin-left: 50px; margin-top: 5px; font-size: 100%; text-align: center;">Garage</p>
+                                <img src="pool.png" alt="pool" style="display:block; margin-left:600px; margin-top: -85px; width: 45px; height: auto;">
+                                <p style="margin-left: 250px; margin-top: 3px; font-size: 100%; text-align: center;">Pool</p>
+                                <h2 style="margin-left: 650px; margin-top: -100px; font-size: 160%; text-align: center;">Price per Night </h1>
+                                    <p style="margin-left: 780px; font-size: 130%;">18,000 Rs</p>
+                              </div>
+                             
+                            </div>
+                        
+        
+                            <div class="card" id="hcard6" style="display: none;">
+                            
+                              <div class="card-body">
+                                  <img src="hotel7.jpg" alt="hotel Logo" style="display: block; margin-left: 15px; margin-top: 40px;width: 16%; height: auto; " height="150px">
+                                  <h1 style="margin-left: 20px; margin-top: -135px; font-size: 150%; text-align: center;">Mandalay Bay, Ottawa</h1>
+                                  <a href="hoteluseretails.html"><input type="button" onclick="openPage()"style="background-color: blue; color: white; text-align: center; border-color: blue; position:relative; left: 870px; margin-top: 90px ;" value="Select Hotel"> </a>
+                                  <img src="breakfast.png" alt="breakfast" style="display:block; margin-left: 250px; margin-top: -100px; width: 50px; height: auto;">
+                                  <p style="margin-left: -450px; margin-top: 0px; font-size: 100%; text-align: center;">Breakfast Included </p>
+                                  <img src="tub.png" alt="tub" style="display:block; margin-left: 380px; margin-top: -90px; width: 40px; height: auto;">
+                                  <p style="margin-left: -180px; margin-top: 10px; font-size: 100%; text-align: center;">Hot Tub</p>
+                                  <img src="garage.png" alt="garage" style="display:block; margin-left:500px; margin-top: -85px; width: 38px; height: auto;">
+                                  <p style="margin-left: 50px; margin-top: 5px; font-size: 100%; text-align: center;">Garage</p>
+                                  <img src="pool.png" alt="pool" style="display:block; margin-left:600px; margin-top: -85px; width: 45px; height: auto;">
+                                  <p style="margin-left: 250px; margin-top: 3px; font-size: 100%; text-align: center;">Pool</p>
+                                  <h2 style="margin-left: 650px; margin-top: -100px; font-size: 160%; text-align: center;">Price per Night </h1>
+                                      <p style="margin-left: 780px; font-size: 130%;">13,000 Rs</p>
+                                </div>
+                               
+                              </div>
+        
+                              <div class="card" id="hcard7" style="display: none;">
+                            
+                                <div class="card-body">
+                                    <img src="hotel9.jpg" alt="hotel Logo" style="display: block; margin-left: 15px; margin-top: 40px;width: 16%; height: auto; " height="150px">
+                                    <h1 style="margin-left: 20px; margin-top: -135px; font-size: 150%; text-align: center;">Downtown Grand, Victoria</h1>
+                                    <a href="hoteluseretails.html"><input type="button" onclick="openPage()"style="background-color: blue; color: white; text-align: center; border-color: blue; position:relative; left: 870px; margin-top: 90px ;" value="Select Hotel"> </a>
+                                    <img src="breakfast.png" alt="breakfast" style="display:block; margin-left: 250px; margin-top: -100px; width: 50px; height: auto;">
+                                    <p style="margin-left: -450px; margin-top: 0px; font-size: 100%; text-align: center;">Breakfast Included </p>
+                                    <img src="tub.png" alt="tub" style="display:block; margin-left: 380px; margin-top: -90px; width: 40px; height: auto;">
+                                    <p style="margin-left: -180px; margin-top: 10px; font-size: 100%; text-align: center;">Hot Tub</p>
+                                    <img src="garage.png" alt="garage" style="display:block; margin-left:500px; margin-top: -85px; width: 38px; height: auto;">
+                                    <p style="margin-left: 50px; margin-top: 5px; font-size: 100%; text-align: center;">Garage</p>
+                                    <img src="pool.png" alt="pool" style="display:block; margin-left:600px; margin-top: -85px; width: 45px; height: auto;">
+                                    <p style="margin-left: 250px; margin-top: 3px; font-size: 100%; text-align: center;">Pool</p>
+                                    <h2 style="margin-left: 650px; margin-top: -100px; font-size: 160%; text-align: center;">Price per Night </h1>
+                                        <p style="margin-left: 780px; font-size: 130%;">18,000 Rs</p>
+                                  </div>
+                                 
+                                </div>
+                                   
+                                <div class="card" id="hcard8" style="display: none;">
+                    
+                                  <div class="card-body">
+                                      <img src="hotel3.jpg" alt="hotel Logo" style="display: block; margin-left: 15px; margin-top: 40px;width: 16%; height: auto; " height="150px">
+                                      <h1 style="margin-left: 20px; margin-top: -135px; font-size: 150%; text-align: center;">Radio Hotel, Monclova</h1>
+                                      <a href="hoteluseretails.html"><input type="button"onclick="openPage()" style="background-color: blue; color: white; text-align: center; border-color: blue; position:relative; left: 870px; margin-top: 90px ;" value="Select Hotel"> </a>
+                                      <img src="breakfast.png" alt="breakfast" style="display:block; margin-left: 250px; margin-top: -100px; width: 50px; height: auto;">
+                                      <p style="margin-left: -450px; margin-top: 0px; font-size: 100%; text-align: center;">Breakfast Included </p>
+                                      <img src="tub.png" alt="tub" style="display:block; margin-left: 380px; margin-top: -90px; width: 40px; height: auto;">
+                                      <p style="margin-left: -180px; margin-top: 10px; font-size: 100%; text-align: center;">Hot Tub</p>
+                                      <img src="garage.png" alt="garage" style="display:block; margin-left:500px; margin-top: -85px; width: 38px; height: auto;">
+                                      <p style="margin-left: 50px; margin-top: 5px; font-size: 100%; text-align: center;">Garage</p>
+                                      <img src="pool.png" alt="pool" style="display:block; margin-left:600px; margin-top: -85px; width: 45px; height: auto;">
+                                      <p style="margin-left: 250px; margin-top: 3px; font-size: 100%; text-align: center;">Pool</p>
+                                      <h2 style="margin-left: 650px; margin-top: -100px; font-size: 160%; text-align: center;">Price per Night </h1>
+                                          <p style="margin-left: 780px; font-size: 130%;">20,000 Rs</p>
+                                    </div>
+                                   
+                                  </div>
+                              
+              
+                                  <div class="card" id="hcard9" style="display: none;">
+                                  
+                                    <div class="card-body">
+                                        <img src="hotel7.jpg" alt="hotel Logo" style="display: block; margin-left: 15px; margin-top: 40px;width: 16%; height: auto; " height="150px">
+                                        <h1 style="margin-left: 20px; margin-top: -135px; font-size: 150%; text-align: center;">Treasure Island, San Pedro </h1>
+                                        <a href="hoteluseretails.html"><input type="button"onclick="openPage()" style="background-color: blue; color: white; text-align: center; border-color: blue; position:relative; left: 870px; margin-top: 90px ;" value="Select Hotel"> </a>
+                                        <img src="breakfast.png" alt="breakfast" style="display:block; margin-left: 250px; margin-top: -100px; width: 50px; height: auto;">
+                                        <p style="margin-left: -450px; margin-top: 0px; font-size: 100%; text-align: center;">Breakfast Included </p>
+                                        <img src="tub.png" alt="tub" style="display:block; margin-left: 380px; margin-top: -90px; width: 40px; height: auto;">
+                                        <p style="margin-left: -180px; margin-top: 10px; font-size: 100%; text-align: center;">Hot Tub</p>
+                                        <img src="garage.png" alt="garage" style="display:block; margin-left:500px; margin-top: -85px; width: 38px; height: auto;">
+                                        <p style="margin-left: 50px; margin-top: 5px; font-size: 100%; text-align: center;">Garage</p>
+                                        <img src="pool.png" alt="pool" style="display:block; margin-left:600px; margin-top: -85px; width: 45px; height: auto;">
+                                        <p style="margin-left: 250px; margin-top: 3px; font-size: 100%; text-align: center;">Pool</p>
+                                        <h2 style="margin-left: 650px; margin-top: -100px; font-size: 160%; text-align: center;">Price per Night </h1>
+                                            <p style="margin-left: 780px; font-size: 130%;">15,000 Rs</p>
+                                      </div>
+                                     
+                                    </div>
+              
+                                    <div class="card" id="hcard10" style="display: none;">
+                                  
+                                      <div class="card-body">
+                                          <img src="hotel6.jpg" alt="hotel Logo" style="display: block; margin-left: 15px; margin-top: 40px;width: 16%; height: auto; " height="150px">
+                                          <h1 style="margin-left: 20px; margin-top: -135px; font-size: 150%; text-align: center;">The Palazzo, Sabinas</h1>
+                                          <a href="hoteluseretails.html"><input type="button"onclick="openPage()" style="background-color: blue; color: white; text-align: center; border-color: blue; position:relative; left: 870px; margin-top: 90px ;" value="Select Hotel"> </a>
+                                          <img src="breakfast.png" alt="breakfast" style="display:block; margin-left: 250px; margin-top: -100px; width: 50px; height: auto;">
+                                          <p style="margin-left: -450px; margin-top: 0px; font-size: 100%; text-align: center;">Breakfast Included </p>
+                                          <img src="tub.png" alt="tub" style="display:block; margin-left: 380px; margin-top: -90px; width: 40px; height: auto;">
+                                          <p style="margin-left: -180px; margin-top: 10px; font-size: 100%; text-align: center;">Hot Tub</p>
+                                          <img src="garage.png" alt="garage" style="display:block; margin-left:500px; margin-top: -85px; width: 38px; height: auto;">
+                                          <p style="margin-left: 50px; margin-top: 5px; font-size: 100%; text-align: center;">Garage</p>
+                                          <img src="pool.png" alt="pool" style="display:block; margin-left:600px; margin-top: -85px; width: 45px; height: auto;">
+                                          <p style="margin-left: 250px; margin-top: 3px; font-size: 100%; text-align: center;">Pool</p>
+                                          <h2 style="margin-left: 650px; margin-top: -100px; font-size: 160%; text-align: center;">Price per Night </h1>
+                                              <p style="margin-left: 780px; font-size: 130%;">12,000 Rs</p>
+                                        </div>
+                                       
+                                      </div>
+              
+                                      <div class="card" id="hcard11" style="display: none;">
+                                  
+                                        <div class="card-body">
+                                            <img src="hotel4.jpg" alt="hotel Logo" style="display: block; margin-left: 15px; margin-top: 40px;width: 16%; height: auto; " height="150px">
+                                            <h1 style="margin-left: 20px; margin-top: -115px; font-size: 150%; text-align: center;">Golden Nugget Hotel, Saltillo</h1>
+                                            <a href="hoteluseretails.html"><input type="button" onclick="openPage()"style="background-color: blue; color: white; text-align: center; border-color: blue; position:relative; left: 870px; margin-top: 90px ;" value="Select Hotel"> </a>
+                                            <img src="breakfast.png" alt="breakfast" style="display:block; margin-left: 250px; margin-top: -100px; width: 50px; height: auto;">
+                                            <p style="margin-left: -450px; margin-top: 0px; font-size: 100%; text-align: center;">Breakfast Included </p>
+                                            <img src="tub.png" alt="tub" style="display:block; margin-left: 380px; margin-top: -90px; width: 40px; height: auto;">
+                                            <p style="margin-left: -180px; margin-top: 10px; font-size: 100%; text-align: center;">Hot Tub</p>
+                                            <img src="garage.png" alt="garage" style="display:block; margin-left:500px; margin-top: -85px; width: 38px; height: auto;">
+                                            <p style="margin-left: 50px; margin-top: 5px; font-size: 100%; text-align: center;">Garage</p>
+                                        
+                                            <h2 style="margin-left: 650px; margin-top: -100px; font-size: 160%; text-align: center;">Price per Night </h1>
+                                                <p style="margin-left: 780px; font-size: 130%;">5,000 Rs</p>
+                                          </div>
+                                         
+                                        </div>
+
+                           <div class="card" id="hcard12" style="display: none;">
+                    
+                    <div class="card-body">
+                        <img src="hotel7.jpg" alt="hotel Logo" style="display: block; margin-left: 15px; margin-top: 40px;width: 16%; height: auto; " height="150px">
+                        <h1 style="margin-left: 20px; margin-top: -135px; font-size: 150%; text-align: center;">Vineta Hotel, Dubai</h1>
+                        <a href="hoteluseretails.html"><input type="button" onclick="openPage()"style="background-color: blue; color: white; text-align: center; border-color: blue; position:relative; left: 870px; margin-top: 90px ;" value="Select Hotel"> </a>
+                        <img src="breakfast.png" alt="breakfast" style="display:block; margin-left: 250px; margin-top: -100px; width: 50px; height: auto;">
+                        <p style="margin-left: -450px; margin-top: 0px; font-size: 100%; text-align: center;">Breakfast Included </p>
+                        <img src="tub.png" alt="tub" style="display:block; margin-left: 380px; margin-top: -90px; width: 40px; height: auto;">
+                        <p style="margin-left: -180px; margin-top: 10px; font-size: 100%; text-align: center;">Hot Tub</p>
+                        <img src="garage.png" alt="garage" style="display:block; margin-left:500px; margin-top: -85px; width: 38px; height: auto;">
+                        <p style="margin-left: 50px; margin-top: 5px; font-size: 100%; text-align: center;">Garage</p>
+                        
+                        <h2 style="margin-left: 650px; margin-top: -100px; font-size: 160%; text-align: center;">Price per Night </h1>
+                            <p style="margin-left: 780px; font-size: 130%;">3,000 Rs</p>
+                      </div>
+                     
+                    </div>
+                
+
+                    <div class="card" id="hcard13" style="display: none;">
+                    
+                      <div class="card-body">
+                          <img src="hotel5.jpg" alt="hotel Logo" style="display: block; margin-left: 15px; margin-top: 40px;width: 16%; height: auto; " height="150px">
+                          <h1 style="margin-left: 20px; margin-top: -135px; font-size: 150%; text-align: center;">Luxury Holiday House, Abu Dhabi </h1>
+                          <a href="hoteluseretails.html"><input type="button"onclick="openPage()" style="background-color: blue; color: white; text-align: center; border-color: blue; position:relative; left: 870px; margin-top: 110px ;" value="Select Hotel"> </a>
+                          <img src="breakfast.png" alt="breakfast" style="display:block; margin-left: 250px; margin-top: -100px; width: 50px; height: auto;">
+                          <p style="margin-left: -450px; margin-top: 0px; font-size: 100%; text-align: center;">Breakfast Included </p>
+                          <img src="tub.png" alt="tub" style="display:block; margin-left: 380px; margin-top: -90px; width: 40px; height: auto;">
+                          <p style="margin-left: -180px; margin-top: 10px; font-size: 100%; text-align: center;">Hot Tub</p>
+                          <img src="garage.png" alt="garage" style="display:block; margin-left:500px; margin-top: -85px; width: 38px; height: auto;">
+                          <p style="margin-left: 50px; margin-top: 5px; font-size: 100%; text-align: center;">Garage</p>
+                          <img src="pool.png" alt="pool" style="display:block; margin-left:600px; margin-top: -85px; width: 45px; height: auto;">
+                          <p style="margin-left: 250px; margin-top: 3px; font-size: 100%; text-align: center;">Pool</p>
+                          <h2 style="margin-left: 650px; margin-top: -100px; font-size: 160%; text-align: center;">Price per Night </h1>
+                              <p style="margin-left: 780px; font-size: 130%;">5,000 Rs</p>
+                        </div>
+                       
+                      </div>
+
+                      <div class="card" id="hcard14" style="display: none;">
+                    
+                        <div class="card-body">
+                            <img src="hotel9.jpg" alt="hotel Logo" style="display: block; margin-left: 15px; margin-top: 50px;width: 16%; height: auto; " height="150px">
+                            <h1 style="margin-left: 20px; margin-top: -135px; font-size: 150%; text-align: center;">Trianon Hotel, Ajman</h1>
+                            <a href="hoteluseretails.html"><input type="button"onclick="openPage()" style="background-color: blue; color: white; text-align: center; border-color: blue; position:relative; left: 870px; margin-top: 90px ;" value="Select Hotel"> </a>
+                            <img src="breakfast.png" alt="breakfast" style="display:block; margin-left: 250px; margin-top: -100px; width: 50px; height: auto;">
+                            <p style="margin-left: -450px; margin-top: 0px; font-size: 100%; text-align: center;">Breakfast Included </p>
+                            <img src="tub.png" alt="tub" style="display:block; margin-left: 380px; margin-top: -90px; width: 40px; height: auto;">
+                            <p style="margin-left: -180px; margin-top: 10px; font-size: 100%; text-align: center;">Hot Tub</p>
+                            <img src="garage.png" alt="garage" style="display:block; margin-left:500px; margin-top: -85px; width: 38px; height: auto;">
+                            <p style="margin-left: 50px; margin-top: 5px; font-size: 100%; text-align: center;">Garage</p>
+                            <img src="pool.png" alt="pool" style="display:block; margin-left:600px; margin-top: -85px; width: 45px; height: auto;">
+                            <p style="margin-left: 250px; margin-top: 3px; font-size: 100%; text-align: center;">Pool</p>
+                            <h2 style="margin-left: 650px; margin-top: -100px; font-size: 160%; text-align: center;">Price per Night </h1>
+                                <p style="margin-left: 780px; font-size: 130%;">9,000 Rs</p>
+                          </div>
+                         
+                        </div>
+                        <div class="card" id="hcard15" style="display: none;">
+                    
+                          <div class="card-body">
+                              <img src="hotel3.jpg" alt="hotel Logo" style="display: block; margin-left: 15px; margin-top: 40px;width: 16%; height: auto; " height="150px">
+                              <h1 style="margin-left: 20px; margin-top: -135px; font-size: 150%; text-align: center;">Maison Prevee, Riyadh</h1>
+                              <a href="hoteluseretails.html"><input type="button"onclick="openPage()" style="background-color: blue; color: white; text-align: center; border-color: blue; position:relative; left: 870px; margin-top: 90px ;" value="Select Hotel"> </a>
+                              <img src="breakfast.png" alt="breakfast" style="display:block; margin-left: 250px; margin-top: -100px; width: 50px; height: auto;">
+                              <p style="margin-left: -450px; margin-top: 0px; font-size: 100%; text-align: center;">Breakfast Included </p>
+                              <img src="tub.png" alt="tub" style="display:block; margin-left: 380px; margin-top: -90px; width: 40px; height: auto;">
+                              <p style="margin-left: -180px; margin-top: 10px; font-size: 100%; text-align: center;">Hot Tub</p>
+                              <img src="garage.png" alt="garage" style="display:block; margin-left:500px; margin-top: -85px; width: 38px; height: auto;">
+                              <p style="margin-left: 50px; margin-top: 5px; font-size: 100%; text-align: center;">Garage</p>
+                              <img src="pool.png" alt="pool" style="display:block; margin-left:600px; margin-top: -85px; width: 45px; height: auto;">
+                              <p style="margin-left: 250px; margin-top: 3px; font-size: 100%; text-align: center;">Pool</p>
+                              <h2 style="margin-left: 650px; margin-top: -100px; font-size: 160%; text-align: center;">Price per Night </h1>
+                                  <p style="margin-left: 780px; font-size: 130%;">15,000 Rs</p>
+                            </div>
+                           
+                          </div>
+                      
+      
+                          <div class="card" id="hcard16" style="display: none;">
+                          
+                            <div class="card-body">
+                                <img src="hotel5.jpg" alt="hotel Logo" style="display: block; margin-left: 15px; margin-top: 40px;width: 16%; height: auto; " height="150px">
+                                <h1 style="margin-left: 20px; margin-top: -135px; font-size: 150%; text-align: center;">Holdiay Inn, Al Jubail </h1>
+                                <a href="hoteluseretails.html"><input type="button"onclick="openPage()" style="background-color: blue; color: white; text-align: center; border-color: blue; position:relative; left: 870px; margin-top: 90px ;" value="Select Hotel"> </a>
+                                <img src="breakfast.png" alt="breakfast" style="display:block; margin-left: 250px; margin-top: -100px; width: 50px; height: auto;">
+                                <p style="margin-left: -450px; margin-top: 0px; font-size: 100%; text-align: center;">Breakfast Included </p>
+                                <img src="tub.png" alt="tub" style="display:block; margin-left: 380px; margin-top: -90px; width: 40px; height: auto;">
+                                <p style="margin-left: -180px; margin-top: 10px; font-size: 100%; text-align: center;">Hot Tub</p>
+                                <img src="garage.png" alt="garage" style="display:block; margin-left:500px; margin-top: -85px; width: 38px; height: auto;">
+                                <p style="margin-left: 50px; margin-top: 5px; font-size: 100%; text-align: center;">Garage</p>
+                                <img src="pool.png" alt="pool" style="display:block; margin-left:600px; margin-top: -85px; width: 45px; height: auto;">
+                                <p style="margin-left: 250px; margin-top: 3px; font-size: 100%; text-align: center;">Pool</p>
+                                <h2 style="margin-left: 650px; margin-top: -100px; font-size: 160%; text-align: center;">Price per Night </h1>
+                                    <p style="margin-left: 780px; font-size: 130%;">8,000 Rs</p>
+                              </div>
+                             
+                            </div>
+      
+                            <div class="card" id="hcard17" style="display: none;">
+                          
+                              <div class="card-body">
+                                  <img src="hotel9.jpg" alt="hotel Logo" style="display: block; margin-left: 15px; margin-top: 50px;width: 16%; height: auto; " height="150px">
+                                  <h1 style="margin-left: 20px; margin-top: -135px; font-size: 150%; text-align: center;">Crowne Plaza, Jeddah</h1>
+                                  <a href="hoteluseretails.html"><input type="button"onclick="openPage()" style="background-color: blue; color: white; text-align: center; border-color: blue; position:relative; left: 870px; margin-top: 90px ;" value="Select Hotel"> </a>
+                                  <img src="breakfast.png" alt="breakfast" style="display:block; margin-left: 250px; margin-top: -100px; width: 50px; height: auto;">
+                                  <p style="margin-left: -450px; margin-top: 0px; font-size: 100%; text-align: center;">Breakfast Included </p>
+                                  <img src="tub.png" alt="tub" style="display:block; margin-left: 380px; margin-top: -90px; width: 40px; height: auto;">
+                                  <p style="margin-left: -180px; margin-top: 10px; font-size: 100%; text-align: center;">Hot Tub</p>
+                                  <img src="garage.png" alt="garage" style="display:block; margin-left:500px; margin-top: -85px; width: 38px; height: auto;">
+                                  <p style="margin-left: 50px; margin-top: 5px; font-size: 100%; text-align: center;">Garage</p>
+                                  <img src="pool.png" alt="pool" style="display:block; margin-left:600px; margin-top: -85px; width: 45px; height: auto;">
+                                  <p style="margin-left: 250px; margin-top: 3px; font-size: 100%; text-align: center;">Pool</p>
+                                  <h2 style="margin-left: 650px; margin-top: -100px; font-size: 160%; text-align: center;">Price per Night </h1>
+                                      <p style="margin-left: 780px; font-size: 130%;">9,000 Rs</p>
+                                </div>
+                               
+                              </div>
+                              <div class="card" id="hcard18" style="display: none;">
+                                
+                              <div class="card-body">
+                                  <img src="hotel4.jpg" alt="hotel Logo" style="display: block; margin-left: 15px; margin-top: 40px;width: 16%; height: auto; " height="150px">
+                                  <h1 style="margin-left: 20px; margin-top: -115px; font-size: 150%; text-align: center;">Faimount Hotel, Mecca</h1>
+                                  <a href="hoteluseretails.html"><input type="button" onclick="openPage()"style="background-color: blue; color: white; text-align: center; border-color: blue; position:relative; left: 870px; margin-top: 90px ;" value="Select Hotel"> </a>
+                                  <img src="breakfast.png" alt="breakfast" style="display:block; margin-left: 250px; margin-top: -100px; width: 50px; height: auto;">
+                                  <p style="margin-left: -450px; margin-top: 0px; font-size: 100%; text-align: center;">Breakfast Included </p>
+                                  <img src="tub.png" alt="tub" style="display:block; margin-left: 380px; margin-top: -90px; width: 40px; height: auto;">
+                                  <p style="margin-left: -180px; margin-top: 10px; font-size: 100%; text-align: center;">Hot Tub</p>
+                                  <img src="garage.png" alt="garage" style="display:block; margin-left:500px; margin-top: -85px; width: 38px; height: auto;">
+                                  <p style="margin-left: 50px; margin-top: 5px; font-size: 100%; text-align: center;">Garage</p>
+                                  <img src="pool.png" alt="pool" style="display:block; margin-left:600px; margin-top: -85px; width: 45px; height: auto;">
+                                  <p style="margin-left: 250px; margin-top: 3px; font-size: 100%; text-align: center;">Pool</p>
+                                  <h2 style="margin-left: 650px; margin-top: -100px; font-size: 160%; text-align: center;">Price per Night </h1>
+                                      <p style="margin-left: 780px; font-size: 130%;">12,000 Rs</p>
+                                </div>
+                               
+                              </div>      
+
+                              <div class="card" id="hcard19" style="display: none;">
+                    
+                                <div class="card-body">
+                                    <img src="hotel.jpg" alt="hotel Logo" style="display: block; margin-left: 15px; margin-top: 40px;width: 16%; height: auto; " height="150px">
+                                    <h1 style="margin-left: 20px; margin-top: -135px; font-size: 150%; text-align: center;">Hotel Isola, Genoa</h1>
+                                    <a href="hoteluseretails.html"><input type="button"onclick="openPage()" style="background-color: blue; color: white; text-align: center; border-color: blue; position:relative; left: 870px; margin-top: 90px ;" value="Select Hotel"> </a>
+                                    <img src="breakfast.png" alt="breakfast" style="display:block; margin-left: 250px; margin-top: -100px; width: 50px; height: auto;">
+                                    <p style="margin-left: -450px; margin-top: 0px; font-size: 100%; text-align: center;">Breakfast Included </p>
+                                    <img src="tub.png" alt="tub" style="display:block; margin-left: 380px; margin-top: -90px; width: 40px; height: auto;">
+                                    <p style="margin-left: -180px; margin-top: 10px; font-size: 100%; text-align: center;">Hot Tub</p>
+                                    <img src="garage.png" alt="garage" style="display:block; margin-left:500px; margin-top: -85px; width: 38px; height: auto;">
+                                    <p style="margin-left: 50px; margin-top: 5px; font-size: 100%; text-align: center;">Garage</p>
+                                    <img src="pool.png" alt="pool" style="display:block; margin-left:600px; margin-top: -85px; width: 45px; height: auto;">
+                                    <p style="margin-left: 250px; margin-top: 3px; font-size: 100%; text-align: center;">Pool</p>
+                                    <h2 style="margin-left: 650px; margin-top: -100px; font-size: 160%; text-align: center;">Price per Night </h1>
+                                        <p style="margin-left: 780px; font-size: 130%;">20,000 Rs</p>
+                                  </div>
+                                 
+                                </div>
+                            
+            
+                                <div class="card" id="hcard20" style="display: none;">
+                                
+                                  <div class="card-body">
+                                      <img src="hotel2.jpg" alt="hotel Logo" style="display: block; margin-left: 15px; margin-top: 40px;width: 16%; height: auto; " height="150px">
+                                      <h1 style="margin-left: 20px; margin-top: -135px; font-size: 150%; text-align: center;">Elizabeth Palace, Turin </h1>
+                                      <a href="hoteluseretails.html"><input type="button"onclick="openPage()" style="background-color: blue; color: white; text-align: center; border-color: blue; position:relative; left: 870px; margin-top: 90px ;" value="Select Hotel"> </a>
+                                      <img src="breakfast.png" alt="breakfast" style="display:block; margin-left: 250px; margin-top: -100px; width: 50px; height: auto;">
+                                      <p style="margin-left: -450px; margin-top: 0px; font-size: 100%; text-align: center;">Breakfast Included </p>
+                                      <img src="tub.png" alt="tub" style="display:block; margin-left: 380px; margin-top: -90px; width: 40px; height: auto;">
+                                      <p style="margin-left: -180px; margin-top: 10px; font-size: 100%; text-align: center;">Hot Tub</p>
+                                      <img src="garage.png" alt="garage" style="display:block; margin-left:500px; margin-top: -85px; width: 38px; height: auto;">
+                                      <p style="margin-left: 50px; margin-top: 5px; font-size: 100%; text-align: center;">Garage</p>
+                                      <img src="pool.png" alt="pool" style="display:block; margin-left:600px; margin-top: -85px; width: 45px; height: auto;">
+                                      <p style="margin-left: 250px; margin-top: 3px; font-size: 100%; text-align: center;">Pool</p>
+                                      <h2 style="margin-left: 650px; margin-top: -100px; font-size: 160%; text-align: center;">Price per Night </h1>
+                                          <p style="margin-left: 780px; font-size: 130%;">8,000 Rs</p>
+                                    </div>
+                                   
+                                  </div>
+            
+                                  <div class="card" id="hcard21" style="display: none;">
+                                
+                                    <div class="card-body">
+                                        <img src="hotel3.jpg" alt="hotel Logo" style="display: block; margin-left: 15px; margin-top: 40px;width: 16%; height: auto; " height="150px">
+                                        <h1 style="margin-left: 20px; margin-top: -135px; font-size: 150%; text-align: center;">Domus Lina, Rome</h1>
+                                        <a href="hoteluseretails.html"><input type="button"onclick="openPage()" style="background-color: blue; color: white; text-align: center; border-color: blue; position:relative; left: 870px; margin-top: 90px ;" value="Select Hotel"> </a>
+                                        <img src="breakfast.png" alt="breakfast" style="display:block; margin-left: 250px; margin-top: -100px; width: 50px; height: auto;">
+                                        <p style="margin-left: -450px; margin-top: 0px; font-size: 100%; text-align: center;">Breakfast Included </p>
+                                        <img src="tub.png" alt="tub" style="display:block; margin-left: 380px; margin-top: -90px; width: 40px; height: auto;">
+                                        <p style="margin-left: -180px; margin-top: 10px; font-size: 100%; text-align: center;">Hot Tub</p>
+                                        <img src="garage.png" alt="garage" style="display:block; margin-left:500px; margin-top: -85px; width: 38px; height: auto;">
+                                        <p style="margin-left: 50px; margin-top: 5px; font-size: 100%; text-align: center;">Garage</p>
+                                        <img src="pool.png" alt="pool" style="display:block; margin-left:600px; margin-top: -85px; width: 45px; height: auto;">
+                                        <p style="margin-left: 250px; margin-top: 3px; font-size: 100%; text-align: center;">Pool</p>
+                                        <h2 style="margin-left: 650px; margin-top: -100px; font-size: 160%; text-align: center;">Price per Night </h1>
+                                            <p style="margin-left: 780px; font-size: 130%;">15,000 Rs</p>
+                                      </div>
+                                     
+                                    </div>
+            
+                                    <div class="card" id="hcard22" style="display: none;">
+                                
+                                      <div class="card-body">
+                                          <img src="hotel4.jpg" alt="hotel Logo" style="display: block; margin-left: 15px; margin-top: 40px;width: 16%; height: auto; " height="150px">
+                                          <h1 style="margin-left: 20px; margin-top: -115px; font-size: 150%; text-align: center;">Hotel Miraggio, Milan</h1>
+                                          <a href="hoteluseretails.html"><input type="button" onclick="openPage()"style="background-color: blue; color: white; text-align: center; border-color: blue; position:relative; left: 870px; margin-top: 90px ;" value="Select Hotel"> </a>
+                                          <img src="breakfast.png" alt="breakfast" style="display:block; margin-left: 250px; margin-top: -100px; width: 50px; height: auto;">
+                                          <p style="margin-left: -450px; margin-top: 0px; font-size: 100%; text-align: center;">Breakfast Included </p>
+                                          <img src="tub.png" alt="tub" style="display:block; margin-left: 380px; margin-top: -90px; width: 40px; height: auto;">
+                                          <p style="margin-left: -180px; margin-top: 10px; font-size: 100%; text-align: center;">Hot Tub</p>
+                                          <img src="garage.png" alt="garage" style="display:block; margin-left:500px; margin-top: -85px; width: 38px; height: auto;">
+                                          <p style="margin-left: 50px; margin-top: 5px; font-size: 100%; text-align: center;">Garage</p>
+                                          <img src="pool.png" alt="pool" style="display:block; margin-left:600px; margin-top: -85px; width: 45px; height: auto;">
+                                          <p style="margin-left: 250px; margin-top: 3px; font-size: 100%; text-align: center;">Pool</p>
+                                          <h2 style="margin-left: 650px; margin-top: -100px; font-size: 160%; text-align: center;">Price per Night </h1>
+                                              <p style="margin-left: 780px; font-size: 130%;">11,000 Rs</p>
+                                        </div>
+                                       
+                                      </div>
+                        <script>
+                
+                            var queryString = window.location.search;
+                            var urlParams = new URLSearchParams(queryString);
+                            var hotellocation = urlParams.get('hotellocation');
+                            
+                        
+                        
+
+                            if (hotellocation === "USA" ) {
+                            document.getElementById("hcard1").style.display = "block"; document.getElementById("hcard2").style.display = "block";document.getElementById("hcard3").style.display = "block"; document.getElementById("hcard4").style.display="block";
+                            }else if (hotellocation === "Canada") {
+                                document.getElementById("hcard5").style.display = "block"; document.getElementById("hcard6").style.display = "block";document.getElementById("hcard7").style.display = "block"; }
+                                
+                            else if (hotellocation === "Mexico") {
+                                document.getElementById("hcard8").style.display = "block"; document.getElementById("hcard9").style.display = "block";document.getElementById("hcard10").style.display = "block"; document.getElementById("hcard11").style.display = "block";
+                            }else if (hotellocation === "UAE") {
+                                document.getElementById("hcard12").style.display = "block"; document.getElementById("hcard13").style.display = "block";document.getElementById("hcard14").style.display = "block";
+                            }else if (hotellocation === "Saudi Arabia") {
+                                document.getElementById("hcard15").style.display = "block"; document.getElementById("hcard16").style.display = "block";document.getElementById("hcard17").style.display = "block"; document.getElementById("hcard18").style.display = "block";
+                            } else if (hotellocation === "Italy") {
+                                document.getElementById("hcard19").style.display = "block"; document.getElementById("hcard20").style.display = "block";document.getElementById("hcard21").style.display = "block"; document.getElementById("hcard22").style.display = "block";
+                            }
+                            else {
+                                document.write("No Hotels Available , Stay Tuned");
+                            }
+                            
+                        
+                        </script>
+
+<script>
+  function openPage() {
+      var hname;
+      var price3;
+      var resnum;
+
+      document.getElementById('hcard1').addEventListener('click', function() {
+      hname = "Trump International Hotel, Las Vegas" 
+      price3 = 20000;
+      resnum = "RN-198";
+      localStorage.setItem("hname", hname);
+      localStorage.setItem('price3', price3);
+      localStorage.setItem('resnum', resnum);
+      });
+      document.getElementById('hcard2').addEventListener('click', function() {
+      hname = "Caesar's Palace" 
+      price3 = 15000;
+      resnum = "RN-199";
+      localStorage.setItem("hname", hname);
+      localStorage.setItem('price3', price3);
+      localStorage.setItem('resnum', resnum);
+      });document.getElementById('hcard3').addEventListener('click', function() {
+      hname = "Hilton Square" 
+      price3 = 9000;
+      resnum = "RN-200";
+      localStorage.setItem("hname", hname);
+      localStorage.setItem('price3', price3);
+      localStorage.setItem('resnum', resnum);
+      });document.getElementById('hcard4').addEventListener('click', function() {
+      hname = "Empire Hotel" 
+      price3 = 5000;
+      resnum = "RN-201";
+      localStorage.setItem("hname", hname);
+      localStorage.setItem('price3', price3);
+      localStorage.setItem('resnum', resnum);
+      });document.getElementById('hcard5').addEventListener('click', function() {
+      hname = "Bellagio Hotel, Toronto" 
+      price3 = 18000;
+      resnum = "RN-202";
+      localStorage.setItem("hname", hname);
+      localStorage.setItem('price3', price3);
+      localStorage.setItem('resnum', resnum);
+      });document.getElementById('hcard6').addEventListener('click', function() {
+      hname = "Mandalay Bay, Ottawa" 
+      price3 = 13000;
+      resnum = "RN-203";
+      localStorage.setItem("hname", hname);
+      localStorage.setItem('price3', price3);
+      localStorage.setItem('resnum', resnum);
+      });document.getElementById('hcard7').addEventListener('click', function() {
+      hname = "Downtown Grand, Victorias" 
+      price3 = 18000;
+      resnum = "RN-204";
+      localStorage.setItem("hname", hname);
+      localStorage.setItem('price3', price3);
+      localStorage.setItem('resnum', resnum);
+      });document.getElementById('hcard8').addEventListener('click', function() {
+      hname = "Radio Hotel, Monclova" 
+      price3 = 20000;
+      resnum = "RN-205";
+      localStorage.setItem("hname", hname);
+      localStorage.setItem('price3', price3);
+      localStorage.setItem('resnum', resnum);
+      });document.getElementById('hcard9').addEventListener('click', function() {
+      hname = "Treasure Island, San Pedro" 
+      price3 = 15000;
+      resnum = "RN-206";
+      localStorage.setItem("hname", hname);
+      localStorage.setItem('price3', price3);
+      localStorage.setItem('resnum', resnum);
+      });document.getElementById('hcard10').addEventListener('click', function() {
+      hname = "The Palazzo, Sabinas" 
+      price3 = 12000;
+      resnum = "RN-207";
+      localStorage.setItem("hname", hname);
+      localStorage.setItem('price3', price3);
+      localStorage.setItem('resnum', resnum);
+      });document.getElementById('hcard11').addEventListener('click', function() {
+      hname = "Golden Nugget Hotel, Saltillo" 
+      price3 = 5000;
+      resnum = "RN-208";
+      localStorage.setItem("hname", hname);
+      localStorage.setItem('price3', price3);
+      localStorage.setItem('resnum', resnum);
+      });document.getElementById('hcard12').addEventListener('click', function() {
+      hname = "Vineta Hotel, Dubai" 
+      price3 = 3000;
+      resnum = "RN-209";
+      localStorage.setItem("hname", hname);
+      localStorage.setItem('price3', price3);
+      localStorage.setItem('resnum', resnum);
+      });document.getElementById('hcard13').addEventListener('click', function() {
+      hname = "Luxury Holiday House, Abu Dhabi" 
+      price3 = 5000;
+      resnum = "RN-210";
+      localStorage.setItem("hname", hname);
+      localStorage.setItem('price3', price3);
+      localStorage.setItem('resnum', resnum);
+      });document.getElementById('hcard14').addEventListener('click', function() {
+      hname = "Trianon Hotel, Ajman" 
+      price3 = 9000;
+      resnum = "RN-211";
+      localStorage.setItem("hname", hname);
+      localStorage.setItem('price3', price3);
+      localStorage.setItem('resnum', resnum);
+      });document.getElementById('hcard15').addEventListener('click', function() {
+      hname = "Maison Prevee, Riyadh" 
+      price3 = 15000;
+      resnum = "RN-212";
+      localStorage.setItem("hname", hname);
+      localStorage.setItem('price3', price3);
+      localStorage.setItem('resnum', resnum);
+      });document.getElementById('hcard16').addEventListener('click', function() {
+      hname = "Holdiay Inn, Al Jubail" 
+      price3 = 8000;
+      resnum = "RN-213";
+      localStorage.setItem("hname", hname);
+      localStorage.setItem('price3', price3);
+      localStorage.setItem('resnum', resnum);
+      });document.getElementById('hcard17').addEventListener('click', function() {
+      hname = "Crowne Plaza, Jeddah" 
+      price3 = 9000;
+      resnum = "RN-214";
+      localStorage.setItem("hname", hname);
+      localStorage.setItem('price3', price3);
+      localStorage.setItem('resnum', resnum);
+      });document.getElementById('hcard18').addEventListener('click', function() {
+      hname = "Faimount Hotel, Mecca" 
+      price3 = 12000;
+      resnum = "RN-215";
+      localStorage.setItem("hname", hname);
+      localStorage.setItem('price3', price3);
+      localStorage.setItem('resnum', resnum);
+      });document.getElementById('hcard19').addEventListener('click', function() {
+      hname = "Hotel Isola, Genoa" 
+      price3 = 20000;
+      resnum = "RN-216";
+      localStorage.setItem("hname", hname);
+      localStorage.setItem('price3', price3);
+      localStorage.setItem('resnum', resnum);
+      });document.getElementById('hcard20').addEventListener('click', function() {
+      hname = "Elizabeth Palace, Turin" 
+      price3 = 8000;
+      resnum = "RN-217";
+      localStorage.setItem("hname", hname);
+      localStorage.setItem('price3', price3);
+      localStorage.setItem('resnum', resnum);
+      });document.getElementById('hcard21').addEventListener('click', function() {
+      hname = "Domus Lina, Rome" 
+      price3 = 15000;
+      resnum = "RN-218";
+      localStorage.setItem("hname", hname);
+      localStorage.setItem('price3', price3);
+      localStorage.setItem('resnum', resnum);
+      });document.getElementById('hcard22').addEventListener('click', function() {
+      hname = "Hotel Miraggio, Milan" 
+      price3 = 11000;
+      resnum = "RN-219";
+      localStorage.setItem("hname", hname);
+      localStorage.setItem('price3', price3);
+      localStorage.setItem('resnum', resnum);
+      });
+
+}
+  
+  </script>
+
+                 </div>
+
+                </div>
+            
+    </div>
+
+    <a href="hotel.html"><input type="button" style="background-color: blue; color: white; text-align: center; border-color: blue; margin-left: 30px; margin-top: 110px;" value="BACK"> </a>
+      
+      
+      
+      
+      
+      
+</div>
+
+
+
+</form>
+</body>
+</html>
